@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Roster - Miclase Comic Multiverse</title>
+  <meta name="description" content="Browse DC and Marvel characters by family, team, or legacy. Find the perfect starting point for your favorite heroes.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+  <canvas class="stars" id="stars"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        Miclase Comic Multiverse
+      </a>
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">☀️</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="dc-hub.html" class="nav-link dc-link">DC</a></li>
+        <li><a href="marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="roster-new.html" class="nav-link active">Roster</a></li>
+        <li><a href="essentials-new.html" class="nav-link">Essentials</a></li>
+        <li><a href="elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Character Roster</span>
+        </div>
+        <h1>Character Roster</h1>
+        <p>Find your favorite heroes and their essential reading lists</p>
+      </header>
+
+      <!-- Universe Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active dc" onclick="switchUniverse('dc')">🟦 DC Characters</button>
+        <button class="tab-btn marvel" onclick="switchUniverse('marvel')">🔴 Marvel Characters</button>
+      </div>
+
+      <!-- DC Characters -->
+      <div id="dc" class="tab-content active">
+        <section class="roster-section">
+          <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🦇</span> Bat-Family
+          </h2>
+          <div class="roster-grid">
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #1a1a2e);">🦇</div>
+              <div class="roster-name">Batman / Bruce Wayne</div>
+              <div class="roster-alias">The Dark Knight</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Batman: Year One</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #1a1a2e);">🐦</div>
+              <div class="roster-name">Nightwing / Dick Grayson</div>
+              <div class="roster-alias">The First Robin</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Batman: The Long Halloween</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #e62429, #1a1a2e);">🎪</div>
+              <div class="roster-name">Robin / Tim Drake</div>
+              <div class="roster-alias">The Detective</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Batman: Dark Victory</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #9b59b6, #1a1a2e);">📖</div>
+              <div class="roster-name">Oracle / Barbara Gordon</div>
+              <div class="roster-alias">Eyes & Ears</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Batman: The Killing Joke</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #2ecc71, #1a1a2e);">🦸‍♀️</div>
+              <div class="roster-name">Batgirl / Cassandra Cain</div>
+              <div class="roster-alias">The Weapon</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Batman: No Man's Land</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #1a1a2e);">⚫</div>
+              <div class="roster-name">Catwoman / Selina Kyle</div>
+              <div class="roster-alias">The Cat</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Batman: The Long Halloween</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="roster-section">
+          <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🦸</span> The Trinity & Justice League
+          </h2>
+          <div class="roster-grid">
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #ffd700);">S</div>
+              <div class="roster-name">Superman / Clark Kent</div>
+              <div class="roster-alias">The Man of Steel</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: The Man of Steel</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #e62429, #ffd700);">W</div>
+              <div class="roster-name">Wonder Woman / Diana Prince</div>
+              <div class="roster-alias">The Amazon Princess</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Gods and Mortals</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #ffd700);">⚡</div>
+              <div class="roster-name">The Flash / Wally West</div>
+              <div class="roster-alias">The Fastest Man Alive</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Born to Run</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #9b59b6);">🔫</div>
+              <div class="roster-name">Green Lantern / Hal Jordan</div>
+              <div class="roster-alias">The Ring Wielder</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Emerald Dawn</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #e62429);">🌊</div>
+              <div class="roster-name">Aquaman / Arthur Curry</div>
+              <div class="roster-alias">King of the Seas</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Time and Tide</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #e62429, #ffd700);">⚡</div>
+              <div class="roster-name">Black Adam / Teth-Adam</div>
+              <div class="roster-alias">The Corrupted Champion</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Black Adam series</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="roster-section">
+          <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🎯</span> Heroes & Vigilantes
+          </h2>
+          <div class="roster-grid">
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #0077ff);">🏹</div>
+              <div class="roster-name">Green Arrow / Oliver Queen</div>
+              <div class="roster-alias">The Archer</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: The Longbow Hunters</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #2ecc71, #0077ff);">🎤</div>
+              <div class="roster-name">Black Canary / Dinah Lance</div>
+              <div class="roster-alias">The Sonic Scream</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Birds of Prey</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #e62429, #0077ff);">❓</div>
+              <div class="roster-name">The Question / Vic Sage</div>
+              <div class="roster-alias">The Investigator</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: The Question series</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #9b59b6, #0077ff);">👁️</div>
+              <div class="roster-name">Doctor Fate / Kent Nelson</div>
+              <div class="roster-alias">The Mystical Protector</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Dr. Fate series</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #e62429);">⚙️</div>
+              <div class="roster-name">Steel / John Henry Irons</div>
+              <div class="roster-alias">The Man of Steel</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: The Death of Superman</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #e62429);">🌠</div>
+              <div class="roster-name">Captain Marvel / Shazam</div>
+              <div class="roster-alias">The Magic Champion</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Shazam! series</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Marvel Characters -->
+      <div id="marvel" class="tab-content">
+        <section class="roster-section">
+          <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🕷️</span> Spider-Man Family
+          </h2>
+          <div class="roster-grid">
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #e62429, #0077ff);">🕷️</div>
+              <div class="roster-name">Spider-Man / Peter Parker</div>
+              <div class="roster-alias">Friendly Neighborhood</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Amazing Spider-Man #1</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #2ecc71, #0077ff);">🌿</div>
+              <div class="roster-name">Green Goblin / Norman Osborn</div>
+              <div class="roster-alias">The Menace</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: The Alien Costume Saga</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #000000, #e62429);">🖤</div>
+              <div class="roster-name">Venom / Eddie Brock</div>
+              <div class="roster-alias">The Symbiote</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: The Alien Costume Saga</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #e62429);">🏃</div>
+              <div class="roster-name">Spider-Gwen / Gwen Stacy</div>
+              <div class="roster-alias">The Amazing Spider-Gwen</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Edge of Spider-Verse</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="roster-section">
+          <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🔥</span> X-Men
+          </h2>
+          <div class="roster-grid">
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #e62429);">☀️</div>
+              <div class="roster-name">Cyclops / Scott Summers</div>
+              <div class="roster-alias">The Leader</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: X-Men #1</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #e62429, #0077ff);">🌹</div>
+              <div class="roster-name">Phoenix / Jean Grey</div>
+              <div class="roster-alias">The Phoenix Force</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Dark Phoenix Saga</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #0077ff);">🐺</div>
+              <div class="roster-name">Wolverine / Logan</div>
+              <div class="roster-alias">The Best There Is</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Wolverine 1982</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #000000, #0077ff);">🌙</div>
+              <div class="roster-name">Storm / Ororo Munroe</div>
+              <div class="roster-alias">The Weather Witch</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: X-Men: God Loves, Man Kills</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #9b59b6, #0077ff);">👑</div>
+              <div class="roster-name">Magneto / Erik Lehnsherr</div>
+              <div class="roster-alias">Master of Magnetism</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: X-Men runs</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #e62429, #0077ff);">💀</div>
+              <div class="roster-name">Gambit / Remy LeBeau</div>
+              <div class="roster-alias">The Cajun</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: X-Men runs</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="roster-section">
+          <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>⚡</span> Avengers
+          </h2>
+          <div class="roster-grid">
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #e62429, #ffd700);">🔨</div>
+              <div class="roster-name">Thor / Odin's Son</div>
+              <div class="roster-alias">God of Thunder</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Journey Into Mystery</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #e62429, #ffd700);">🛡️</div>
+              <div class="roster-name">Captain America / Steve Rogers</div>
+              <div class="roster-alias">The Super Soldier</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Captain America 2005</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #e62429);">⚙️</div>
+              <div class="roster-name">Iron Man / Tony Stark</div>
+              <div class="roster-alias">The Genius Billionaire</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Iron Man: Demon in a Bottle</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #2ecc71, #0077ff);">💚</div>
+              <div class="roster-name">Hulk / Bruce Banner</div>
+              <div class="roster-alias">The Green Goliath</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Immortal Hulk</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #9b59b6, #0077ff);">🪶</div>
+              <div class="roster-name">Black Widow / Natasha Romanoff</div>
+              <div class="roster-alias">The Spy</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Marvel Knights runs</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #e62429);">🏹</div>
+              <div class="roster-name">Hawkeye / Clint Barton</div>
+              <div class="roster-alias">The Archer</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Hawkeye 2012</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="roster-section">
+          <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🪐</span> Cosmic Heroes
+          </h2>
+          <div class="roster-grid">
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #e62429);">✨</div>
+              <div class="roster-name">Captain Marvel / Carol Danvers</div>
+              <div class="roster-alias">The Cosmic Hero</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Captain Marvel 2012</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #9b59b6);">🌟</div>
+              <div class="roster-name">Silver Surfer / Norrin Radd</div>
+              <div class="roster-alias">The Herald of Galactus</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Silver Surfer 1968</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #2ecc71, #0077ff);">🚀</div>
+              <div class="roster-name">Star-Lord / Peter Quill</div>
+              <div class="roster-alias">The Outlaw</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Guardians 2008</p>
+            </div>
+            <div class="roster-card">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #9b59b6, #e62429);">👹</div>
+              <div class="roster-name">Thanos / The Mad Titan</div>
+              <div class="roster-alias">The Inevitable</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Start: Thanos War</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Tips Section -->
+      <section style="background: var(--bg-secondary); padding: 2rem; border-radius: 12px; margin-top: 3rem; border: 1px solid var(--border-color);">
+        <h3 style="margin-bottom: 1rem;">💡 How to Use This Roster</h3>
+        <ul style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary);">
+          <li style="margin-bottom: 0.5rem;">Click on any character to view their essential reading list and story arcs</li>
+          <li style="margin-bottom: 0.5rem;">Each character card shows a recommended starting point for new readers</li>
+          <li style="margin-bottom: 0.5rem;">Use the DC and Marvel tabs to switch between universes</li>
+          <li style="margin-bottom: 0.5rem;">Characters are grouped by family and team for easy navigation</li>
+          <li>Check the Essentials page for curated must-read stories across all characters</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Miclase Comic Multiverse - Your Guide to Comic Book Reading Orders</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem;">Made with love for comic book fans everywhere</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/roster.js"></script>
+</body>
+</html>

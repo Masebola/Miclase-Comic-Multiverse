@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Universe - Miclase Comic Multiverse</title>
+  <meta name="description" content="Complete DC Comics reading roadmap from Post-Crisis to Dawn of DC. Batman, Superman, Wonder Woman, and more.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+  <canvas class="stars" id="stars"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        Miclase Comic Multiverse
+      </a>
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">☀️</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="dc-hub.html" class="nav-link dc-link active">DC</a></li>
+        <li><a href="marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="roster.html" class="nav-link">Roster</a></li>
+        <li><a href="essentials.html" class="nav-link">Essentials</a></li>
+        <li><a href="elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header dc">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>DC Universe</span>
+        </div>
+        <h1>DC Universe Roadmap</h1>
+        <p>Post-Crisis to Dawn of DC — The Complete Reading Order</p>
+      </header>
+
+      <!-- Phases Grid -->
+      <section class="cards-grid">
+        <!-- Phase 0 -->
+        <a href="dc-phases/phase0.html" class="card card-dc">
+          <span class="tag tag-event">Phase 0</span>
+          <h3 class="card-title" style="margin-top: 1rem;">Post-Crisis Foundation</h3>
+          <p class="card-description">1986-1994. Batman: Year One, Superman origins, Wonder Woman's rebirth, and the first meetings of the Justice League.</p>
+          <div class="card-meta" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">9 reading tracks</div>
+        </a>
+
+        <!-- Phase 1 -->
+        <a href="dc-phases/phase1.html" class="card card-dc">
+          <span class="tag tag-event">Phase 1</span>
+          <h3 class="card-title" style="margin-top: 1rem;">The Rise of Villains</h3>
+          <p class="card-description">1994-2004. Identity Crisis. Villains become lethal threats. Gotham falls apart. Heroes' loved ones become war zones.</p>
+          <div class="card-meta" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">10 reading tracks</div>
+        </a>
+
+        <!-- Phase 2 -->
+        <a href="dc-phases/phase2.html" class="card card-dc">
+          <span class="tag tag-event">Phase 2</span>
+          <h3 class="card-title" style="margin-top: 1rem;">Infinite Crisis & The Multiverse Returns</h3>
+          <p class="card-description">2005-2010. The Multiverse returns. Heroes from alternate earths come home. Reality shatters and rebuilds.</p>
+          <div class="card-meta" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">8 reading tracks</div>
+        </a>
+
+        <!-- Phase 3 -->
+        <a href="dc-phases/phase3.html" class="card card-dc">
+          <span class="tag tag-event">Phase 3</span>
+          <h3 class="card-title" style="margin-top: 1rem;">The New 52 Era</h3>
+          <p class="card-description">2011-2016. The New 52 reboot. A new beginning with familiar heroes in a revised continuity.</p>
+          <div class="card-meta" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">7 reading tracks</div>
+        </a>
+
+        <!-- Phase 4 -->
+        <a href="dc-phases/phase4.html" class="card card-dc">
+          <span class="tag tag-event">Phase 4</span>
+          <h3 class="card-title" style="margin-top: 1rem;">Rebirth & The Superman/Batman Eras</h3>
+          <p class="card-description">2016-2021. The Rebirth initiative restores pre-Flashpoint continuity. Batman and Superman dominate the landscape.</p>
+          <div class="card-meta" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">9 reading tracks</div>
+        </a>
+
+        <!-- Phase 5 -->
+        <a href="dc-phases/phase5.html" class="card card-dc">
+          <span class="tag tag-event">Phase 5</span>
+          <h3 class="card-title" style="margin-top: 1rem;">Death Metal & Omnibus Era</h3>
+          <p class="card-description">2020-2023. Dark Nights and reality-bending events. The multiverse expands wildly. Batman takes the spotlight.</p>
+          <div class="card-meta" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">8 reading tracks</div>
+        </a>
+
+        <!-- Phase 6 -->
+        <a href="dc-phases/phase6.html" class="card card-dc">
+          <span class="tag tag-event">Phase 6</span>
+          <h3 class="card-title" style="margin-top: 1rem;">Dawn of DC</h3>
+          <p class="card-description">2023-Present. The current era. A fresh start with existing heroes. The future of the DC Universe unfolds now.</p>
+          <div class="card-meta" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">6 reading tracks</div>
+        </a>
+      </section>
+
+      <!-- Tips Section -->
+      <section style="background: var(--bg-secondary); padding: 2rem; border-radius: 12px; margin-top: 3rem; border: 1px solid var(--border-color);">
+        <h3 style="margin-bottom: 1rem;">💡 Pro Tips</h3>
+        <ul style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary);">
+          <li style="margin-bottom: 0.5rem;">Click on any phase to view the detailed reading order and track your progress</li>
+          <li style="margin-bottom: 0.5rem;">Each comic has a checkbox—click to mark comics as read and track your progress</li>
+          <li style="margin-bottom: 0.5rem;">Your progress is saved automatically in your browser</li>
+          <li style="margin-bottom: 0.5rem;">You don't have to read every track—focus on the characters you love</li>
+          <li>Use the Roster page to discover which comics feature your favorite characters</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Miclase Comic Multiverse - Your Guide to Comic Book Reading Orders</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem;">Made with love for comic book fans everywhere</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

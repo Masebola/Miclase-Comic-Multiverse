@@ -21,18 +21,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Find and activate the correct tab button
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            if (btn.textContent.toLowerCase().includes(tabName)) {
-                btn.classList.add('active');
-            }
-        });
+        const activeBtn = document.querySelector(`[onclick*="${tabName}"]`);
+        if (activeBtn) {
+            activeBtn.classList.add('active');
+        }
         
         // Update tab content
         document.querySelectorAll('.tab-content').forEach(content => {
             content.classList.remove('active');
         });
         
-        const targetTab = document.getElementById(tabName + '-tab');
+        const targetTab = document.getElementById(tabName);
         if (targetTab) {
             targetTab.classList.add('active');
         }

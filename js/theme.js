@@ -52,4 +52,18 @@
     // Theme toggle
     const savedTheme = localStorage.getItem('miclaseTheme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
+    
+    // Toggle theme function
+    window.toggleTheme = function() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('miclaseTheme', newTheme);
+        
+        // Update button icon
+        const btn = document.getElementById('themeToggle');
+        if (btn) {
+            btn.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        }
+    };
 })();

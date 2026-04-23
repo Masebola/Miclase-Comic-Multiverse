@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Phase 0: Post-Crisis Foundation - Miclase Comic Multiverse</title>
+  <meta name="description" content="Post-Crisis Foundation (1986-1994). Read Batman: Year One, Superman origins, Wonder Woman rebirth, and more in the perfect order.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+  <canvas class="stars" id="stars"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="navbar-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        Miclase Comic Multiverse
+      </a>
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">☀️</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../dc.html" class="nav-link dc-link active">DC</a></li>
+        <li><a href="../marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="../roster.html" class="nav-link">Roster</a></li>
+        <li><a href="../essentials.html" class="nav-link">Essentials</a></li>
+        <li><a href="../elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="../instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="../dc.html">DC Universe</a>
+        <span>/</span>
+        <span>Phase 0: Post-Crisis Foundation</span>
+      </div>
+
+      <!-- Page Header -->
+      <section class="page-header dc">
+        <h1>Phase 0: Post-Crisis Foundation</h1>
+        <p style="color: var(--text-secondary); margin-top: 0.5rem;">1986 – 1994</p>
+      </section>
+
+      <!-- Phase Overview -->
+      <section style="background: var(--bg-secondary); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 1px solid var(--border-color);">
+        <h3 style="margin-bottom: 1rem;">🔄 The Universe Reboots</h3>
+        <p style="color: var(--text-secondary); line-height: 1.6;">
+          Crisis on Infinite Earths rewrote DC continuity. Origins are being rewritten. Your characters are meeting for the first time. Read these in order to understand the post-Crisis DC Universe foundation.
+        </p>
+      </section>
+
+      <!-- Reading Tracks -->
+      <div class="reading-section">
+        <h2 style="margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">📖 Reading Tracks</h2>
+
+        <!-- Bat-Family Track -->
+        <div class="track-section">
+          <h3 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; color: var(--accent-dc);">
+            <span>🦇</span> Bat-Family Track
+          </h3>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: Year One</div>
+                <div class="reading-meta">Batman #404-407 (1987)</div>
+                <div class="reading-description">The definitive post-Crisis Batman origin. Essential baseline for understanding Bruce Wayne's journey.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: The Long Halloween</div>
+                <div class="reading-meta">1996</div>
+                <div class="reading-description">Harvey Dent becomes Two-Face. Dick Grayson becomes Nightwing. Sets the tone for the entire Bat-saga.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: Dark Victory</div>
+                <div class="reading-meta">1999</div>
+                <div class="reading-description">Continuation of The Long Halloween. Tim Drake deduces Batman's identity and becomes Robin.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: The Killing Joke</div>
+                <div class="reading-meta">1988</div>
+                <div class="reading-description">The Joker paralyzes Barbara Gordon. She becomes Oracle after this pivotal event.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: A Death in the Family</div>
+                <div class="reading-meta">Batman #426-429 (1988)</div>
+                <div class="reading-description">The Joker murders Jason Todd. This death echoes through DC continuity for decades.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: Knightfall / Knightquest / KnightsEnd</div>
+                <div class="reading-meta">1993-94</div>
+                <div class="reading-description">Bane breaks Batman's back. Azrael takes over. Bruce Wayne reclaims the mantle.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Superman Track -->
+        <div class="track-section">
+          <h3 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; margin-top: 2rem; color: var(--accent-dc);">
+            <span>🦸</span> Superman Track
+          </h3>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">The Man of Steel</div>
+                <div class="reading-meta">1986 (John Byrne)</div>
+                <div class="reading-description">The definitive post-Crisis Superman origin. This is the blueprint for modern Superman continuity.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Superman: Exile</div>
+                <div class="reading-meta">Superman #28-30, Adventures of Superman #451-453 (1989)</div>
+                <div class="reading-description">Superman exiles himself to space after executing Kryptonian criminals.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Superman: The Death of Superman / Funeral for a Friend / Reign of the Supermen</div>
+                <div class="reading-meta">1992-93</div>
+                <div class="reading-description">Doomsday kills Superman. Four replacements appear: Steel, Superboy, Cyborg Superman, and the Eradicator.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Superman: The Return of Superman</div>
+                <div class="reading-meta">1993</div>
+                <div class="reading-description">The real Superman returns. Steel and Superboy remain in the cast.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wonder Woman Track -->
+        <div class="track-section">
+          <h3 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; margin-top: 2rem; color: var(--accent-dc);">
+            <span>⭐</span> Wonder Woman Track
+          </h3>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Wonder Woman: Gods and Mortals</div>
+                <div class="reading-meta">Wonder Woman #1-7 (1987) - George Pérez</div>
+                <div class="reading-description">Diana's post-Crisis origin. The definitive Wonder Woman reboot by legendary artist George Pérez.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Wonder Woman: The Challenge of Artemis</div>
+                <div class="reading-meta">Wonder Woman #92-100 (1994-95)</div>
+                <div class="reading-description">Artemis temporarily replaces Diana as Wonder Woman, testing Diana's worthiness.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flash Family Track -->
+        <div class="track-section">
+          <h3 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; margin-top: 2rem; color: var(--accent-dc);">
+            <span>⚡</span> Flash Family Track
+          </h3>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">The Flash: Born to Run</div>
+                <div class="reading-meta">The Flash #62-65 (1992)</div>
+                <div class="reading-description">Wally West's post-Crisis origin as the Flash. The beginning of the Flash legacy.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">The Flash: The Return of Barry Allen</div>
+                <div class="reading-meta">The Flash #73-79 (1993)</div>
+                <div class="reading-description">Wally confronts the legacy he can never escape. A profound character exploration.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">The Flash: Terminal Velocity</div>
+                <div class="reading-meta">The Flash #0, 95-100 (1994)</div>
+                <div class="reading-description">Wally breaks the speed barrier. Introduces the Speed Force concept to DC lore.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Justice League -->
+        <div class="track-section">
+          <h3 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; margin-top: 2rem; color: var(--accent-dc);">
+            <span>🛡️</span> Justice League Track
+          </h3>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Legends</div>
+                <div class="reading-meta">1986-87</div>
+                <div class="reading-description">Post-Crisis first team-up. Launches the Suicide Squad and the new Justice League.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox"></div>
+              <div class="reading-details">
+                <div class="reading-title">Justice League International</div>
+                <div class="reading-meta">1987-89</div>
+                <div class="reading-description">The "bwa-ha-ha" era. Booster Gold and Blue Beetle (Ted Kord) join a more lighthearted League.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <section style="display: flex; gap: 1rem; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+        <a href="../dc.html" class="card" style="flex: 1; text-align: center; display: flex; align-items: center; justify-content: center; min-height: 100px;">
+          <span>← Back to DC Phases</span>
+        </a>
+        <a href="phase1.html" class="card" style="flex: 1; text-align: center; display: flex; align-items: center; justify-content: center; min-height: 100px;">
+          <span>Next: Phase 1 →</span>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Miclase Comic Multiverse - Your Guide to Comic Book Reading Orders</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem;">Made with love for comic book fans everywhere</p>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/phase.js"></script>
+</body>
+</html>
