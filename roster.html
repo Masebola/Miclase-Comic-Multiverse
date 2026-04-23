@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Roster - Miclase Comic Multiverse</title>
+  <meta name="description" content="Browse DC and Marvel characters by family, team, or legacy.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        Miclase Comic Multiverse
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="dc.html" class="nav-link dc-link">DC</a></li>
+        <li><a href="marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="roster.html" class="nav-link active">Roster</a></li>
+        <li><a href="essentials.html" class="nav-link">Essentials</a></li>
+        <li><a href="elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Character Roster</span>
+        </div>
+        <h1>Character Roster</h1>
+        <p>Browse characters by family, team, or legacy</p>
+      </header>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active dc" onclick="switchTab('dc')">DC Universe</button>
+        <button class="tab-btn marvel" onclick="switchTab('marvel')">Marvel Universe</button>
+      </div>
+
+      <!-- DC Tab Content -->
+      <div class="tab-content active" id="dc-tab">
+        <!-- Bat-Family -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="margin-bottom: 1.5rem; color: var(--accent-dc);">🦇 Bat-Family</h2>
+          <div class="roster-grid">
+            <div class="roster-item" onclick="location.href='dc.html#batman'">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #1a1a2e, #333);">B</div>
+              <div class="roster-name">Batman</div>
+              <div class="roster-alias">Bruce Wayne</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #004499);">N</div>
+              <div class="roster-name">Nightwing</div>
+              <div class="roster-alias">Dick Grayson</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #8b0000);">RH</div>
+              <div class="roster-name">Red Hood</div>
+              <div class="roster-alias">Jason Todd</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #228b22);">R</div>
+              <div class="roster-name">Robin</div>
+              <div class="roster-alias">Tim Drake</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #006400);">R</div>
+              <div class="roster-name">Robin</div>
+              <div class="roster-alias">Damian Wayne</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #1a1a2e);">BG</div>
+              <div class="roster-name">Batgirl</div>
+              <div class="roster-alias">Barbara Gordon</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #1a1a2e, #ffd700);">BG</div>
+              <div class="roster-name">Batgirl</div>
+              <div class="roster-alias">Cassandra Cain</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #9b59b6, #1a1a2e);">S</div>
+              <div class="roster-name">Spoiler</div>
+              <div class="roster-alias">Stephanie Brown</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #1a1a2e);">O</div>
+              <div class="roster-name">Oracle</div>
+              <div class="roster-alias">Barbara Gordon</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #9b59b6, #4a0080);">CW</div>
+              <div class="roster-name">Catwoman</div>
+              <div class="roster-alias">Selina Kyle</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Super-Family -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="margin-bottom: 1.5rem; color: var(--accent-dc);">🦸 Super-Family</h2>
+          <div class="roster-grid">
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #dc143c);">S</div>
+              <div class="roster-name">Superman</div>
+              <div class="roster-alias">Clark Kent</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #dc143c);">S</div>
+              <div class="roster-name">Supergirl</div>
+              <div class="roster-alias">Kara Zor-El</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #dc143c);">S</div>
+              <div class="roster-name">Superboy</div>
+              <div class="roster-alias">Conner Kent</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #dc143c);">S</div>
+              <div class="roster-name">Superman</div>
+              <div class="roster-alias">Jon Kent</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #708090, #dc143c);">ST</div>
+              <div class="roster-name">Steel</div>
+              <div class="roster-alias">John Henry Irons</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Flash Family -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="margin-bottom: 1.5rem; color: var(--accent-dc);">⚡ Flash Family</h2>
+          <div class="roster-grid">
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #ffd700);">F</div>
+              <div class="roster-name">The Flash</div>
+              <div class="roster-alias">Barry Allen</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #ffd700);">F</div>
+              <div class="roster-name">The Flash</div>
+              <div class="roster-alias">Wally West</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #ffd700);">F</div>
+              <div class="roster-name">The Flash</div>
+              <div class="roster-alias">Jay Garrick</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ff6b6b, #ffd700);">I</div>
+              <div class="roster-name">Impulse</div>
+              <div class="roster-alias">Bart Allen</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Green Lantern Corps -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="margin-bottom: 1.5rem; color: var(--accent-dc);">💚 Green Lantern Corps</h2>
+          <div class="roster-grid">
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #006400);">GL</div>
+              <div class="roster-name">Green Lantern</div>
+              <div class="roster-alias">Hal Jordan</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #006400);">GL</div>
+              <div class="roster-name">Green Lantern</div>
+              <div class="roster-alias">John Stewart</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #006400);">GL</div>
+              <div class="roster-name">Green Lantern</div>
+              <div class="roster-alias">Guy Gardner</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #006400);">GL</div>
+              <div class="roster-name">Green Lantern</div>
+              <div class="roster-alias">Kyle Rayner</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #006400);">GL</div>
+              <div class="roster-name">Green Lantern</div>
+              <div class="roster-alias">Jessica Cruz</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Marvel Tab Content -->
+      <div class="tab-content" id="marvel-tab">
+        <!-- Spider-Family -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="margin-bottom: 1.5rem; color: var(--accent-marvel);">🕷️ Spider-Family</h2>
+          <div class="roster-grid">
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #0077ff);">SM</div>
+              <div class="roster-name">Spider-Man</div>
+              <div class="roster-alias">Peter Parker</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #1a1a2e, #dc143c);">SM</div>
+              <div class="roster-name">Spider-Man</div>
+              <div class="roster-alias">Miles Morales</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #fff, #1a1a2e);">SG</div>
+              <div class="roster-name">Spider-Gwen</div>
+              <div class="roster-alias">Gwen Stacy</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #1a1a2e, #fff);">V</div>
+              <div class="roster-name">Venom</div>
+              <div class="roster-alias">Eddie Brock</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #1a1a2e);">C</div>
+              <div class="roster-name">Carnage</div>
+              <div class="roster-alias">Cletus Kasady</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- X-Men -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="margin-bottom: 1.5rem; color: var(--accent-marvel);">🧬 X-Men</h2>
+          <div class="roster-grid">
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #1a1a2e);">W</div>
+              <div class="roster-name">Wolverine</div>
+              <div class="roster-alias">Logan</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #ffd700);">C</div>
+              <div class="roster-name">Cyclops</div>
+              <div class="roster-alias">Scott Summers</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #ffd700);">JG</div>
+              <div class="roster-name">Jean Grey</div>
+              <div class="roster-alias">Phoenix</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #fff, #87ceeb);">S</div>
+              <div class="roster-name">Storm</div>
+              <div class="roster-alias">Ororo Munroe</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #9b59b6);">M</div>
+              <div class="roster-name">Magneto</div>
+              <div class="roster-alias">Erik Lehnsherr</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #dc143c);">R</div>
+              <div class="roster-name">Rogue</div>
+              <div class="roster-alias">Anna Marie</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #9b59b6, #1a1a2e);">G</div>
+              <div class="roster-name">Gambit</div>
+              <div class="roster-alias">Remy LeBeau</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #1a1a2e);">B</div>
+              <div class="roster-name">Beast</div>
+              <div class="roster-alias">Hank McCoy</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Avengers -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="margin-bottom: 1.5rem; color: var(--accent-marvel);">⚔️ Avengers</h2>
+          <div class="roster-grid">
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #0077ff);">IM</div>
+              <div class="roster-name">Iron Man</div>
+              <div class="roster-alias">Tony Stark</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #0077ff, #dc143c);">CA</div>
+              <div class="roster-name">Captain America</div>
+              <div class="roster-alias">Steve Rogers</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #9b59b6);">H</div>
+              <div class="roster-name">Hulk</div>
+              <div class="roster-alias">Bruce Banner</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #dc143c);">T</div>
+              <div class="roster-name">Thor</div>
+              <div class="roster-alias">Thor Odinson</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #1a1a2e, #dc143c);">BW</div>
+              <div class="roster-name">Black Widow</div>
+              <div class="roster-alias">Natasha Romanoff</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #9b59b6, #dc143c);">HE</div>
+              <div class="roster-name">Hawkeye</div>
+              <div class="roster-alias">Clint Barton</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #ffd700);">SW</div>
+              <div class="roster-name">Scarlet Witch</div>
+              <div class="roster-alias">Wanda Maximoff</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #ffd700);">V</div>
+              <div class="roster-name">Vision</div>
+              <div class="roster-alias">Victor Shade</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #1a1a2e, #9b59b6);">BP</div>
+              <div class="roster-name">Black Panther</div>
+              <div class="roster-alias">T&apos;Challa</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cosmic -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="margin-bottom: 1.5rem; color: var(--accent-marvel);">🚀 Cosmic Heroes</h2>
+          <div class="roster-grid">
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #c0c0c0, #0077ff);">SS</div>
+              <div class="roster-name">Silver Surfer</div>
+              <div class="roster-alias">Norrin Radd</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #0077ff);">SL</div>
+              <div class="roster-name">Star-Lord</div>
+              <div class="roster-alias">Peter Quill</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #228b22, #9b59b6);">G</div>
+              <div class="roster-name">Gamora</div>
+              <div class="roster-alias">Gamora Zen</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #708090, #1a1a2e);">R</div>
+              <div class="roster-name">Rocket</div>
+              <div class="roster-alias">Rocket Raccoon</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #ffd700, #0077ff);">N</div>
+              <div class="roster-name">Nova</div>
+              <div class="roster-alias">Richard Rider</div>
+            </div>
+            <div class="roster-item">
+              <div class="roster-avatar" style="background: linear-gradient(135deg, #dc143c, #ffd700);">CM</div>
+              <div class="roster-name">Captain Marvel</div>
+              <div class="roster-alias">Carol Danvers</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Miclase Comic Multiverse - Your Guide to Comic Book Reading Orders</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/roster.js"></script>
+</body>
+</html>

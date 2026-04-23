@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Universe - Miclase Comic Multiverse</title>
+  <meta name="description" content="Complete Marvel Comics reading roadmap from Silver Age to present. Spider-Man, X-Men, Avengers, and more.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        Miclase Comic Multiverse
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="dc.html" class="nav-link dc-link">DC</a></li>
+        <li><a href="marvel.html" class="nav-link marvel-link active">Marvel</a></li>
+        <li><a href="roster.html" class="nav-link">Roster</a></li>
+        <li><a href="essentials.html" class="nav-link">Essentials</a></li>
+        <li><a href="elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header marvel">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Marvel Universe</span>
+        </div>
+        <h1>Marvel Universe Roadmap</h1>
+        <p>Silver Age to Present &mdash; The Complete Reading Order</p>
+      </header>
+
+      <!-- Progress -->
+      <section class="progress-container">
+        <div class="progress-header">
+          <h4 class="progress-title">Marvel Reading Progress</h4>
+          <span class="progress-stats" id="marvelProgress">0 / 0 comics read</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="marvelProgressFill" style="width: 0%; background: var(--accent-marvel)"></div>
+        </div>
+      </section>
+
+      <!-- Search -->
+      <section class="search-container">
+        <div class="search-box">
+          <input type="text" class="search-input" id="marvelSearch" placeholder="Search comics, characters, or events...">
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="spider-man">Spider-Man</button>
+          <button class="filter-btn" data-filter="x-men">X-Men</button>
+          <button class="filter-btn" data-filter="avengers">Avengers</button>
+          <button class="filter-btn" data-filter="fantastic-four">Fantastic Four</button>
+          <button class="filter-btn" data-filter="cosmic">Cosmic</button>
+          <button class="filter-btn" data-filter="daredevil">Daredevil</button>
+        </div>
+      </section>
+
+      <!-- Phase List -->
+      <section id="marvelPhases">
+        <!-- Phase 0 -->
+        <div class="phase-card" data-phase="0">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">0</div>
+              <div class="phase-title-group">
+                <h3>Silver Age Foundations</h3>
+                <span class="phase-years">1961 - 1970</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>🌟 The Birth of the Marvel Universe</h4>
+              <p>Read these foundations to understand the core characters, relationships, and concepts that define Marvel.</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>🕷️ Spider-Man</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-asm-1-33">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Amazing Spider-Man #1-33</div>
+                    <div class="reading-meta">Lee/Ditko (1963-1966)</div>
+                    <div class="reading-description">Origin, Gwen Stacy, Daily Bugle cast, Green Goblin, Doctor Octopus. The quintessential hero-with-problems template.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-asm-121-122">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Amazing Spider-Man #121-122</div>
+                    <div class="reading-meta">&quot;The Night Gwen Stacy Died&quot; (1973)</div>
+                    <div class="reading-description">THE pivotal moment. The end of the Silver Age innocence.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🔥 Fantastic Four</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-ff-1-10">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Fantastic Four #1-10</div>
+                    <div class="reading-meta">Lee/Kirby</div>
+                    <div class="reading-description">Origin, Mole Man, Skrulls, Doctor Doom&apos;s introduction.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-ff-48-50">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Fantastic Four #48-50</div>
+                    <div class="reading-meta">&quot;The Galactus Trilogy&quot; (1966)</div>
+                    <div class="reading-description">Galactus and Silver Surfer debut. The cosmic scale of Marvel begins here. MANDATORY before any cosmic reading.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🧬 X-Men</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-xmen-1-12">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">X-Men #1-12</div>
+                    <div class="reading-meta">(1963-1965)</div>
+                    <div class="reading-description">Origin, Magneto, Brotherhood of Evil Mutants.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-xmen-14-16">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">X-Men #14-16</div>
+                    <div class="reading-meta">&quot;The Sentinels&quot;</div>
+                    <div class="reading-description">The mutant/human conflict defined.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>⚔️ Avengers</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-avengers-1-4">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Avengers #1-4</div>
+                    <div class="reading-meta">Lee/Kirby</div>
+                    <div class="reading-description">Formation, Captain America thawed from ice, &quot;Avengers Assemble!&quot;</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-avengers-57-58">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Avengers #57-58</div>
+                    <div class="reading-meta">Vision&apos;s Introduction</div>
+                    <div class="reading-description">Ultron-5 creates the Vision.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>💜 Cosmic / Thanos</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-captain-marvel-25-33">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Captain Marvel #25-33</div>
+                    <div class="reading-meta">First Thanos appearances</div>
+                    <div class="reading-description">Thanos&apos;s cosmic threat, Death obsession begins.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-silver-surfer-1-18">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Silver Surfer #1-18</div>
+                    <div class="reading-meta">(1968-1970)</div>
+                    <div class="reading-description">His moral struggle, Galactus&apos;s herald trying to be free.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 1 -->
+        <div class="phase-card" data-phase="1">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">1</div>
+              <div class="phase-title-group">
+                <h3>Bronze Age &amp; 70s Epics</h3>
+                <span class="phase-years">1970 - 1979</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>⚔️ Avengers</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-kree-skrull">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Avengers: The Kree-Skrull War</div>
+                    <div class="reading-meta">Avengers #89-97</div>
+                    <div class="reading-description">Epic cosmic war between two alien empires.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-korvac">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Avengers: The Korvac Saga</div>
+                    <div class="reading-meta">Avengers #167-177</div>
+                    <div class="reading-description">Cosmic godhood and sacrifice.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🦾 Iron Man</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-demon-bottle">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Iron Man: Demon in a Bottle</div>
+                    <div class="reading-meta">Iron Man #120-128</div>
+                    <div class="reading-description">Tony&apos;s alcoholism. Essential character work.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase-card" data-phase="2">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">2</div>
+              <div class="phase-title-group">
+                <h3>Darker Stories &amp; Masterworks</h3>
+                <span class="phase-years">1980 - 1989</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>🧬 X-Men (The Claremont Era)</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-dark-phoenix">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">X-Men: Dark Phoenix Saga</div>
+                    <div class="reading-meta">Uncanny X-Men #129-137 (1980)</div>
+                    <div class="reading-description">THE Phoenix Force story. Jean Grey consumed by power, sacrifice, and cosmic judgment.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-dofp">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">X-Men: Days of Future Past</div>
+                    <div class="reading-meta">Uncanny X-Men #141-142 (1981)</div>
+                    <div class="reading-description">Dystopian future, time travel consequences.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-wolverine-82">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Wolverine (1982)</div>
+                    <div class="reading-meta">Claremont/Miller Mini-Series</div>
+                    <div class="reading-description">Japan, honor, and his first solo story.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>😈 Daredevil</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-born-again">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Daredevil: Born Again</div>
+                    <div class="reading-meta">Daredevil #227-233 by Frank Miller</div>
+                    <div class="reading-description">Kingpin destroys Matt Murdock&apos;s life. The best Daredevil story ever.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>💎 Cosmic / Infinity</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-thanos-quest">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Thanos Quest #1-2</div>
+                    <div class="reading-meta">(1990)</div>
+                    <div class="reading-description">Thanos collects the Infinity Gems.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-infinity-gauntlet">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">The Infinity Gauntlet</div>
+                    <div class="reading-meta">#1-6 (1991)</div>
+                    <div class="reading-description">Thanos wields the Gauntlet. THE cosmic event.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🌙 Moon Knight</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-moon-knight-80">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Moon Knight #1-15</div>
+                    <div class="reading-meta">Moench/Sienkiewicz (1980-1982)</div>
+                    <div class="reading-description">Establishes the multiple personalities.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="phase-card" data-phase="3">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">3</div>
+              <div class="phase-title-group">
+                <h3>Expansion &amp; Alternative Realities</h3>
+                <span class="phase-years">1990 - 1999</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>🧬 X-Men</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-age-apocalypse">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">X-Men: Age of Apocalypse</div>
+                    <div class="reading-meta">(1995)</div>
+                    <div class="reading-description">Alternate timeline epic. What if Charles Xavier died?</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>⚔️ Avengers</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-busiek-avengers">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Kurt Busiek &amp; George Perez&apos;s Avengers</div>
+                    <div class="reading-meta">Avengers #1-56 (1998-2002)</div>
+                    <div class="reading-description">Classic Avengers run including Avengers Forever.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>👽 Inhumans</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-inhumans-98">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Inhumans</div>
+                    <div class="reading-meta">Paul Jenkins &amp; Jae Lee (1998)</div>
+                    <div class="reading-description">The definitive modern Inhumans story.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="phase-card" data-phase="4">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">4</div>
+              <div class="phase-title-group">
+                <h3>The Modern Revolution</h3>
+                <span class="phase-years">2001 - 2007</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>🧬 X-Men</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-new-xmen">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">New X-Men by Morrison</div>
+                    <div class="reading-meta">#114-156 (2001-2004)</div>
+                    <div class="reading-description">Reinvigorates the franchise. Cassandra Nova, Weapon Plus, Phoenix recontextualized.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-astonishing-xmen">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Astonishing X-Men by Whedon</div>
+                    <div class="reading-meta">#1-24 (2004-2008)</div>
+                    <div class="reading-description">Joss Whedon&apos;s definitive X-Men run.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>⚔️ Avengers</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-disassembled">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Avengers: Disassembled</div>
+                    <div class="reading-meta">(2004)</div>
+                    <div class="reading-description">Scarlet Witch breaks reality. Hawkeye dies. Vision destroyed. The Avengers end.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-new-avengers">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">New Avengers by Bendis</div>
+                    <div class="reading-meta">#1-64 (2005-2010)</div>
+                    <div class="reading-description">Spider-Man, Wolverine, Luke Cage join the team.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-house-m">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">House of M</div>
+                    <div class="reading-meta">#1-8 (2005)</div>
+                    <div class="reading-description">Scarlet Witch reshapes reality. &quot;No more mutants.&quot; 98% of mutants depowered.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-civil-war">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Civil War</div>
+                    <div class="reading-meta">#1-7 (2006-2007)</div>
+                    <div class="reading-description">Superhuman Registration Act. Iron Man vs. Captain America. Spider-Man unmasks.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🟢 Hulk</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-planet-hulk">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Planet Hulk</div>
+                    <div class="reading-meta">(2006-2007)</div>
+                    <div class="reading-description">Hulk on Sakaar, gladiator, king, tragedy.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-wwh">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">World War Hulk</div>
+                    <div class="reading-meta">#1-5 (2007)</div>
+                    <div class="reading-description">Hulk returns from space, destroys Manhattan.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>😈 Daredevil</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-dd-bendis">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Daredevil by Bendis &amp; Maleev</div>
+                    <div class="reading-meta">Daredevil #16-81</div>
+                    <div class="reading-description">The definitive modern Daredevil run.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🇺🇸 Captain America</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-cap-brubaker">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Captain America by Brubaker</div>
+                    <div class="reading-meta">#1-25 (2005-2007)</div>
+                    <div class="reading-description">Winter Soldier saga. Steve&apos;s assassination.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 5 -->
+        <div class="phase-card" data-phase="5">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">5</div>
+              <div class="phase-title-group">
+                <h3>Secret Invasion &amp; Dark Reign</h3>
+                <span class="phase-years">2008 - 2010</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>🌌 Core Events</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-secret-invasion">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Secret Invasion</div>
+                    <div class="reading-meta">#1-8 (2008)</div>
+                    <div class="reading-description">Skrulls have infiltrated Earth for years. Trust collapses.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-dark-avengers">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Dark Avengers</div>
+                    <div class="reading-meta">#1-16 (2009-2010)</div>
+                    <div class="reading-description">Norman Osborn in charge. Villains posing as heroes.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-siege">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Siege</div>
+                    <div class="reading-meta">#1-4 (2010)</div>
+                    <div class="reading-description">Osborn attacks Asgard. The Heroic Age begins.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🚀 Cosmic</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-annihilation">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Annihilation</div>
+                    <div class="reading-meta">(2006)</div>
+                    <div class="reading-description">Annihilus destroys the universe. Star-Lord, Nova, Silver Surfer, Ronan.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-gotg-08">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Guardians of the Galaxy</div>
+                    <div class="reading-meta">Abnett &amp; Lanning #1-25 (2008)</div>
+                    <div class="reading-description">The team forms. Essential cosmic reading.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-thanos-imperative">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Thanos Imperative</div>
+                    <div class="reading-meta">(2010)</div>
+                    <div class="reading-description">The Cancerverse. Star-Lord and Nova&apos;s sacrifice.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 6 -->
+        <div class="phase-card" data-phase="6">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">6</div>
+              <div class="phase-title-group">
+                <h3>Heroic Age &amp; Fear Itself</h3>
+                <span class="phase-years">2010 - 2012</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>🎯 Hawkeye</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-hawkeye-fraction">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Hawkeye by Fraction</div>
+                    <div class="reading-meta">(2012-2015)</div>
+                    <div class="reading-description">What Hawkeye does when he&apos;s not being an Avenger.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>😈 Daredevil</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-dd-waid">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Daredevil by Mark Waid</div>
+                    <div class="reading-meta">#1-36</div>
+                    <div class="reading-description">A brighter take on Daredevil. Award-winning run.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🔥 Fantastic Four</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-ff-hickman">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Fantastic Four &amp; FF by Hickman</div>
+                    <div class="reading-meta">(2009-2012)</div>
+                    <div class="reading-description">Future Foundation, Reed&apos;s father, multiverse collapsing.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>⚡ Thor</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-thor-god-thunder">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Thor: God of Thunder</div>
+                    <div class="reading-meta">Jason Aaron #1-25 (2012-2014)</div>
+                    <div class="reading-description">Gorr the God Butcher. Three Thors across time.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 7 -->
+        <div class="phase-card" data-phase="7">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">7</div>
+              <div class="phase-title-group">
+                <h3>Marvel NOW! &amp; Infinity</h3>
+                <span class="phase-years">2013 - 2015</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>🌌 Core Events</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-infinity">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Infinity</div>
+                    <div class="reading-meta">Jonathan Hickman (2013)</div>
+                    <div class="reading-description">Thanos invades Earth while the Avengers are in space.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-secret-wars-15">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Secret Wars</div>
+                    <div class="reading-meta">(2015)</div>
+                    <div class="reading-description">The multiverse dies. Battleworld. Doom becomes God.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🕷️ Spider-Man</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-superior">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Superior Spider-Man</div>
+                    <div class="reading-meta">Dan Slott (2013-2014)</div>
+                    <div class="reading-description">Doc Ock in Peter&apos;s body tries to be a &quot;superior&quot; hero.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 8 -->
+        <div class="phase-card" data-phase="8">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">8</div>
+              <div class="phase-title-group">
+                <h3>All-New, All-Different &amp; Legacy</h3>
+                <span class="phase-years">2015 - 2018</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>⚡ Thor</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-mighty-thor">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">The Mighty Thor by Jason Aaron</div>
+                    <div class="reading-meta">#1-23</div>
+                    <div class="reading-description">Jane Foster becomes Thor. The War of the Realms builds.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🤖 Vision</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-vision-king">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">The Vision by Tom King</div>
+                    <div class="reading-meta">#1-12 (2015-2016)</div>
+                    <div class="reading-description">Vision builds a family in the suburbs. Masterpiece.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🐆 Black Panther</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-bp-coates">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Black Panther by Ta-Nehisi Coates</div>
+                    <div class="reading-meta">#1-18 (2016-2018)</div>
+                    <div class="reading-description">Political and philosophical take on Wakanda.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 9 -->
+        <div class="phase-card" data-phase="9">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">9</div>
+              <div class="phase-title-group">
+                <h3>Fresh Start &amp; King in Black</h3>
+                <span class="phase-years">2018 - 2021</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>🧬 X-Men</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-hox-pox">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">House of X / Powers of X</div>
+                    <div class="reading-meta">Jonathan Hickman (2019)</div>
+                    <div class="reading-description">Krakoa. Mutants form a nation. Everything changes.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-xmen-hickman">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">X-Men by Hickman</div>
+                    <div class="reading-meta">#1-21 (2019-2021)</div>
+                    <div class="reading-description">The Krakoan era begins.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>⬛ Venom / Symbiotes</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-venom-cates">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Venom by Donny Cates</div>
+                    <div class="reading-meta">#1-34 (2018-2021)</div>
+                    <div class="reading-description">Knull the symbiote god. Eddie&apos;s journey.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-king-black">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">King in Black</div>
+                    <div class="reading-meta">(2020-2021)</div>
+                    <div class="reading-description">Knull invades Earth. Venom becomes the King in Black.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🟢 Immortal Hulk</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-immortal-hulk">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Immortal Hulk by Al Ewing</div>
+                    <div class="reading-meta">#1-50 (2018-2021)</div>
+                    <div class="reading-description">Horror Hulk. The best Hulk run ever.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🌙 Moon Knight</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-mk-lemire">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Moon Knight by Lemire</div>
+                    <div class="reading-meta">#1-14 (2016)</div>
+                    <div class="reading-description">Psychological exploration of Marc&apos;s identities.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="marvel-mk-mackay">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Moon Knight by MacKay</div>
+                    <div class="reading-meta">#1-30 (2021-2023)</div>
+                    <div class="reading-description">Current run. The Midnight Mission.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 10 -->
+        <div class="phase-card" data-phase="10">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number marvel">10</div>
+              <div class="phase-title-group">
+                <h3>Recent Events &amp; The Present</h3>
+                <span class="phase-years">2022 - Present</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>🧬 X-Men</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-xmen-mackay">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">X-Men by Jed MacKay</div>
+                    <div class="reading-meta">(2024)</div>
+                    <div class="reading-description">Post-Krakoa X-Men. New era begins.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🧛 Blood Hunt</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-blood-hunt">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Blood Hunt</div>
+                    <div class="reading-meta">(2024)</div>
+                    <div class="reading-description">Vampires attack. Blade at the center.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🌍 One World Under Doom</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="marvel-doom">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">One World Under Doom</div>
+                    <div class="reading-meta">(2024-2025)</div>
+                    <div class="reading-description">Doctor Doom conquers the world.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Miclase Comic Multiverse - Your Guide to Comic Book Reading Orders</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/marvel.js"></script>
+</body>
+</html>

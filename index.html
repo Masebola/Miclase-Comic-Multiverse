@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miclase Comic Multiverse - Comic Reading Roadmaps</title>
+  <meta name="description" content="Your ultimate guide to reading DC and Marvel comics in the perfect order. Comprehensive roadmaps from Silver Age to present day.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+  <canvas class="stars" id="stars"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        Miclase Comic Multiverse
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="dc.html" class="nav-link dc-link">DC</a></li>
+        <li><a href="marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="roster.html" class="nav-link">Roster</a></li>
+        <li><a href="essentials.html" class="nav-link">Essentials</a></li>
+        <li><a href="elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1 class="hero-title">
+          Welcome to the <span class="highlight-dc">Cosmic</span> <span class="highlight-marvel">Multiverse</span>
+        </h1>
+        <p class="hero-subtitle">
+          Your ultimate guide to reading DC and Marvel comics in the perfect order. 
+          Navigate decades of stories with our comprehensive roadmaps.
+        </p>
+      </section>
+
+      <!-- Main Cards Grid -->
+      <section class="cards-grid">
+        <!-- DC Card -->
+        <a href="dc.html" class="card card-dc">
+          <div class="card-icon dc">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">DC Universe</h3>
+          <p class="card-description">
+            From Crisis on Infinite Earths to Dawn of DC. Explore Batman, Superman, Wonder Woman, and the Justice League through 10 major phases.
+          </p>
+        </a>
+
+        <!-- Marvel Card -->
+        <a href="marvel.html" class="card card-marvel">
+          <div class="card-icon marvel">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Marvel Universe</h3>
+          <p class="card-description">
+            From Silver Age Foundations to modern events. Follow Spider-Man, X-Men, Avengers, and more through 11 epic phases.
+          </p>
+        </a>
+
+        <!-- Roster Card -->
+        <a href="roster.html" class="card">
+          <div class="card-icon purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Character Roster</h3>
+          <p class="card-description">
+            Browse characters by family, team, or legacy. Find the perfect starting point for your favorite heroes and villains.
+          </p>
+        </a>
+
+        <!-- Essentials Card -->
+        <a href="essentials.html" class="card">
+          <div class="card-icon gold">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Essential Reads</h3>
+          <p class="card-description">
+            The must-read stories that define each universe. Perfect for newcomers or those short on time.
+          </p>
+        </a>
+
+        <!-- Elseworlds Card -->
+        <a href="elseworlds.html" class="card">
+          <div class="card-icon purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Elseworlds</h3>
+          <p class="card-description">
+            Alternate universes, what-ifs, and standalone masterpieces. Stories outside the main continuity.
+          </p>
+        </a>
+
+        <!-- Instructions Card -->
+        <a href="instructions.html" class="card">
+          <div class="card-icon green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <h3 class="card-title">How to Use</h3>
+          <p class="card-description">
+            Learn how to navigate the roadmaps, track your progress, and get the most out of your reading journey.
+          </p>
+        </a>
+      </section>
+
+      <!-- Quick Stats -->
+      <section class="progress-container">
+        <div class="progress-header">
+          <h4 class="progress-title">Your Reading Progress</h4>
+          <span class="progress-stats" id="totalProgress">0 / 0 comics read</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+      </section>
+
+      <!-- Featured Phases -->
+      <section>
+        <h2 style="margin-bottom: 1.5rem;">Start Your Journey</h2>
+        <div class="cards-grid">
+          <div class="card card-dc" onclick="location.href='dc-phases/phase0.html'">
+            <span class="tag tag-event">DC Phase 0</span>
+            <h3 class="card-title" style="margin-top: 1rem;">Pre-Crisis Foundation</h3>
+            <p class="card-description">Golden and Silver Age classics. The birth of Superman, Batman, Wonder Woman, and the Justice League.</p>
+          </div>
+          <div class="card card-marvel" onclick="location.href='marvel-phases/phase0.html'">
+            <span class="tag tag-event">Marvel Phase 0</span>
+            <h3 class="card-title" style="margin-top: 1rem;">Silver Age Foundations</h3>
+            <p class="card-description">The birth of the Marvel Universe. Fantastic Four, Spider-Man, X-Men, and Avengers begin here.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Miclase Comic Multiverse - Your Guide to Comic Book Reading Orders</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem;">Made with love for comic book fans everywhere</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

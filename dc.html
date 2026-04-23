@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Universe - Miclase Comic Multiverse</title>
+  <meta name="description" content="Complete DC Comics reading roadmap from Post-Crisis to Dawn of DC. Batman, Superman, Wonder Woman, and more.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        Miclase Comic Multiverse
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="dc.html" class="nav-link dc-link active">DC</a></li>
+        <li><a href="marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="roster.html" class="nav-link">Roster</a></li>
+        <li><a href="essentials.html" class="nav-link">Essentials</a></li>
+        <li><a href="elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header dc">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>DC Universe</span>
+        </div>
+        <h1>DC Universe Roadmap</h1>
+        <p>Post-Crisis to Dawn of DC &mdash; The Complete Reading Order</p>
+      </header>
+
+      <!-- Progress -->
+      <section class="progress-container">
+        <div class="progress-header">
+          <h4 class="progress-title">DC Reading Progress</h4>
+          <span class="progress-stats" id="dcProgress">0 / 0 comics read</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="dcProgressFill" style="width: 0%; background: var(--accent-dc)"></div>
+        </div>
+      </section>
+
+      <!-- Search -->
+      <section class="search-container">
+        <div class="search-box">
+          <input type="text" class="search-input" id="dcSearch" placeholder="Search comics, characters, or events...">
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="batman">Batman</button>
+          <button class="filter-btn" data-filter="superman">Superman</button>
+          <button class="filter-btn" data-filter="wonder-woman">Wonder Woman</button>
+          <button class="filter-btn" data-filter="flash">Flash</button>
+          <button class="filter-btn" data-filter="green-lantern">Green Lantern</button>
+          <button class="filter-btn" data-filter="justice-league">Justice League</button>
+        </div>
+      </section>
+
+      <!-- Phase List -->
+      <section id="dcPhases">
+        <!-- Phase 0 -->
+        <div class="phase-card" data-phase="0">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">0</div>
+              <div class="phase-title-group">
+                <h3>Pre-Crisis Foundation</h3>
+                <span class="phase-years">1938 - 1985</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>⚡ Foundation Era</h4>
+              <p>The Golden and Silver Age stories that established DC&apos;s greatest heroes and the original multiverse.</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>🦇 Batman Foundations</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-detective-38">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Detective Comics #38 (1940)</div>
+                    <div class="reading-meta">Dick Grayson debuts as Robin - The first sidekick</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-batman-1">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman #1 (1940)</div>
+                    <div class="reading-meta">Catwoman and Joker debut</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-strange-apparitions">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Strange Apparitions</div>
+                    <div class="reading-meta">Detective Comics #469-476, 478-479 - Bronze Age modernization</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🦸 Superman Foundations</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-action-1">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Action Comics #1 (1938)</div>
+                    <div class="reading-meta">Superman and Lois Lane debut</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-action-252">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Action Comics #252 (1959)</div>
+                    <div class="reading-meta">Supergirl (Kara Zor-El) debuts</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-superman-kryptonite">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Superman: Kryptonite Nevermore</div>
+                    <div class="reading-meta">Superman #233-238, 240-242 - Bronze Age story</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>⚡ Flash Foundations</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-showcase-4">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Showcase #4 (1956)</div>
+                    <div class="reading-meta">Barry Allen debuts as The Flash</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-flash-123">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">The Flash #123 (1961)</div>
+                    <div class="reading-meta">&quot;Flash of Two Worlds&quot; - Jay Garrick appears</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🪐 Cosmic Foundations</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-fourth-world">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Jack Kirby&apos;s Fourth World Omnibus</div>
+                    <div class="reading-meta">New Gods #1-11, Forever People #1-11, Mister Miracle #1-18</div>
+                    <div class="reading-description">Introduction of Darkseid, Orion, the Source, and the Anti-Life Equation</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 1 -->
+        <div class="phase-card" data-phase="1">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">1</div>
+              <div class="phase-title-group">
+                <h3>Post-Crisis Foundation</h3>
+                <span class="phase-years">1986 - 1994</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>⛔ EVENT PAUSE - Read First</h4>
+              <p><strong>Crisis on Infinite Earths #1-12</strong> - The Anti-Monitor destroys countless Earths. Barry Allen dies. Supergirl dies. The multiverse becomes a single universe.</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>🦇 Bat-Family Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-year-one">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Year One</div>
+                    <div class="reading-meta">Batman #404-407 (1987) by Frank Miller</div>
+                    <div class="reading-description">The definitive post-Crisis Batman origin. Essential baseline.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-man-who-laughs">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: The Man Who Laughs</div>
+                    <div class="reading-meta">Ed Brubaker &amp; Doug Mahnke</div>
+                    <div class="reading-description">Post-Crisis first encounter with the Joker.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-killing-joke">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: The Killing Joke</div>
+                    <div class="reading-meta">Alan Moore &amp; Brian Bolland (1988)</div>
+                    <div class="reading-description">The Joker shoots Barbara Gordon, paralyzing her. She becomes Oracle.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-death-family">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: A Death in the Family</div>
+                    <div class="reading-meta">Batman #426-429 by Jim Starlin</div>
+                    <div class="reading-description">Jason Todd dies. The Joker murders him. This death echoes for decades.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-lonely-place">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: A Lonely Place of Dying</div>
+                    <div class="reading-meta">Batman #440-442, New Titans #60-61</div>
+                    <div class="reading-description">Tim Drake deduces Batman&apos;s identity and becomes Robin.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-knightfall">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Knightfall Saga</div>
+                    <div class="reading-meta">Knightfall / Knightquest / KnightsEnd (1993-94)</div>
+                    <div class="reading-description">Bane breaks Batman. Azrael takes over. Bruce Wayne reclaims the mantle.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🦸 Superman Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-man-of-steel">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">The Man of Steel</div>
+                    <div class="reading-meta">Man of Steel #1-6 (1986) by John Byrne</div>
+                    <div class="reading-description">Post-Crisis Superman origin. The blueprint.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-death-superman">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">The Death of Superman / Reign of the Supermen</div>
+                    <div class="reading-meta">1992-93 Crossover Event</div>
+                    <div class="reading-description">Doomsday kills Superman. Four replacements appear: Steel, Superboy, Cyborg Superman, and the Eradicator.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>⚡ Flash Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-flash-born-to-run">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">The Flash: Born to Run</div>
+                    <div class="reading-meta">The Flash #62-65 (1992)</div>
+                    <div class="reading-description">Wally West&apos;s post-Crisis origin as Flash.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-flash-terminal">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">The Flash: Terminal Velocity</div>
+                    <div class="reading-meta">The Flash #0, 95-100 (1994)</div>
+                    <div class="reading-description">Wally breaks the speed barrier. Introduces the Speed Force concept.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>💚 Green Lantern Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-emerald-dawn">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Green Lantern: Emerald Dawn I &amp; II</div>
+                    <div class="reading-meta">1989-1991</div>
+                    <div class="reading-description">Hal Jordan&apos;s post-Crisis origin and training under Sinestro.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-emerald-twilight">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Green Lantern: Emerald Twilight</div>
+                    <div class="reading-meta">Green Lantern #48-50 (1994)</div>
+                    <div class="reading-description">Hal Jordan snaps, destroys the Corps, becomes Parallax. Leads into Zero Hour.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase-card" data-phase="2">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">2</div>
+              <div class="phase-title-group">
+                <h3>Rise of Villains</h3>
+                <span class="phase-years">1994 - 2004</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>⛔ EVENT PAUSE - Read First</h4>
+              <p><strong>Identity Crisis #1-7</strong> - Sue Dibny is murdered. A dark secret from the Justice League&apos;s past is exposed. Shifts DC from &quot;bright&quot; to &quot;personal horror.&quot;</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>🦇 Bat-Family Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-long-halloween">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: The Long Halloween</div>
+                    <div class="reading-meta">Jeph Loeb &amp; Tim Sale (1996-97)</div>
+                    <div class="reading-description">13-issue mystery spanning Batman&apos;s early career. Harvey Dent becomes Two-Face.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-dark-victory">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Dark Victory</div>
+                    <div class="reading-meta">Jeph Loeb &amp; Tim Sale</div>
+                    <div class="reading-description">Direct sequel. Introduces Dick Grayson as Robin in the modern era.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-no-mans-land">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: No Man&apos;s Land</div>
+                    <div class="reading-meta">1999-2000 Crossover</div>
+                    <div class="reading-description">The government abandons Gotham. Introduces Cassandra Cain (Batgirl).</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-hush">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Hush</div>
+                    <div class="reading-meta">Batman #608-619 by Jeph Loeb &amp; Jim Lee</div>
+                    <div class="reading-description">A mystery villain manipulates Batman&apos;s entire rogues gallery.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>⚖️ Justice League Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-jla-morrison">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">JLA by Grant Morrison</div>
+                    <div class="reading-meta">JLA #1-41 (1997-2000)</div>
+                    <div class="reading-description">The &quot;big seven&quot; League. Cosmic scale. Definitive modern League run.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-tower-babel">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">JLA: Tower of Babel</div>
+                    <div class="reading-meta">JLA #43-46 by Mark Waid</div>
+                    <div class="reading-description">Ra&apos;s al Ghul steals Batman&apos;s contingency plans to defeat the League.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="phase-card" data-phase="3">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">3</div>
+              <div class="phase-title-group">
+                <h3>Crisis Loop</h3>
+                <span class="phase-years">2004 - 2008</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>⛔ EVENT PAUSE - Read First</h4>
+              <p><strong>Infinite Crisis #1-7</strong> - The multiverse briefly returns. Superboy-Prime and Alexander Luthor try to create a &quot;perfect&quot; Earth. Conner Kent (Superboy) dies.</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>🌌 Core Events</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-52">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">52</div>
+                    <div class="reading-meta">52-issue weekly series (2006-07)</div>
+                    <div class="reading-description">The missing year after Infinite Crisis. Booster Gold&apos;s arc. Vic Sage passes the Question mantle to Renee Montoya.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-final-crisis">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Final Crisis</div>
+                    <div class="reading-meta">Grant Morrison (2008)</div>
+                    <div class="reading-description">Darkseid conquers Earth. Batman is &quot;killed&quot; by Omega Sanction. The New Gods die.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🦇 Bat-Family Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-under-hood">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Under the Hood</div>
+                    <div class="reading-meta">Batman #635-641, 645-650 by Judd Winick</div>
+                    <div class="reading-description">Jason Todd returns as Red Hood. The true resurrection.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-batman-son">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman &amp; Son</div>
+                    <div class="reading-meta">Batman #655-658, 663-675 by Grant Morrison</div>
+                    <div class="reading-description">Damian Wayne debuts.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-rip">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: R.I.P.</div>
+                    <div class="reading-meta">Batman #676-683 by Grant Morrison</div>
+                    <div class="reading-description">The Black Glove finally seems to break Batman.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>💚 Green Lantern Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-gl-rebirth">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Green Lantern: Rebirth</div>
+                    <div class="reading-meta">Geoff Johns (2004-05)</div>
+                    <div class="reading-description">Hal Jordan returns. The Spectre/Hal entity is resolved. Parallax revealed as fear entity.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-sinestro-corps">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Sinestro Corps War</div>
+                    <div class="reading-meta">2007</div>
+                    <div class="reading-description">Sinestro as a general. Anti-Monitor as a weapon. The yellow rings spread fear across the universe.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="phase-card" data-phase="4">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">4</div>
+              <div class="phase-title-group">
+                <h3>Blackest Night</h3>
+                <span class="phase-years">2008 - 2011</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>⛔ EVENT PAUSE - Read First</h4>
+              <p><strong>Blackest Night</strong> - Nekron, lord of the dead, unleashes Black Lantern rings on the deceased. The dead attack the living. Every Lantern Corps must unite.</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>💚 Green Lantern Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-blackest-night">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Blackest Night</div>
+                    <div class="reading-meta">2009-10</div>
+                    <div class="reading-description">The emotional spectrum war. All seven Lantern Corps unite against the Black Lanterns.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-brightest-day">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Brightest Day</div>
+                    <div class="reading-meta">2010-11</div>
+                    <div class="reading-description">Twelve heroes and villains are resurrected. The White Lantern appears.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🦇 Bat-Family Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-battle-cowl">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Battle for the Cowl</div>
+                    <div class="reading-meta">2009</div>
+                    <div class="reading-description">With Bruce gone, Dick, Jason, and others fight to become the new Batman.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-batman-reborn">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman &amp; Robin by Grant Morrison</div>
+                    <div class="reading-meta">Batman and Robin #1-16</div>
+                    <div class="reading-description">Dick Grayson as Batman with Damian Wayne as Robin.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-return-bruce">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">The Return of Bruce Wayne</div>
+                    <div class="reading-meta">Grant Morrison (2010)</div>
+                    <div class="reading-description">Bruce travels through time to return to the present.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 5 -->
+        <div class="phase-card" data-phase="5">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">5</div>
+              <div class="phase-title-group">
+                <h3>The New 52</h3>
+                <span class="phase-years">2011 - 2016</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>⛔ EVENT PAUSE - Read First</h4>
+              <p><strong>Flashpoint #1-5</strong> - Barry Allen creates an alternate timeline. Thomas Wayne is Batman. The universe is reset. The New 52 begins.</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>🦇 Batman Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-court-owls">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Court of Owls</div>
+                    <div class="reading-meta">Batman #1-11 by Scott Snyder</div>
+                    <div class="reading-description">A secret society has controlled Gotham for centuries. One of the best modern Batman runs.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-death-family-new52">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Death of the Family</div>
+                    <div class="reading-meta">Batman #13-17 by Scott Snyder</div>
+                    <div class="reading-description">The Joker returns with his face cut off, targeting the entire Bat-Family.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-endgame">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman: Endgame</div>
+                    <div class="reading-meta">Batman #35-40 by Scott Snyder</div>
+                    <div class="reading-description">The Joker&apos;s ultimate plan. Batman and Joker&apos;s &quot;final&quot; confrontation.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>⚖️ Justice League Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-jl-origin">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Justice League: Origin</div>
+                    <div class="reading-meta">Justice League #1-6 by Geoff Johns &amp; Jim Lee</div>
+                    <div class="reading-description">The New 52 Justice League forms to fight Darkseid.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-forever-evil">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Forever Evil</div>
+                    <div class="reading-meta">2013-14</div>
+                    <div class="reading-description">The Crime Syndicate conquers Earth. Lex Luthor leads the villains against them.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 6 -->
+        <div class="phase-card" data-phase="6">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">6</div>
+              <div class="phase-title-group">
+                <h3>Rebirth &amp; Metal</h3>
+                <span class="phase-years">2016 - 2020</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>⛔ EVENT PAUSE - Read First</h4>
+              <p><strong>DC Universe: Rebirth #1</strong> - Wally West returns. The Watchmen connection is revealed. Legacy heroes return. The DC Universe remembers what was lost.</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>🌌 Core Events</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-dark-nights-metal">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Dark Nights: Metal</div>
+                    <div class="reading-meta">Scott Snyder (2017-18)</div>
+                    <div class="reading-description">The Dark Multiverse. The Batman Who Laughs debuts. Barbatos invades.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-doomsday-clock">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Doomsday Clock</div>
+                    <div class="reading-meta">Geoff Johns (2017-19)</div>
+                    <div class="reading-description">Superman vs. Doctor Manhattan. The Watchmen meet the DC Universe.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🦇 Batman Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-batman-rebirth">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman by Tom King</div>
+                    <div class="reading-meta">Batman #1-85</div>
+                    <div class="reading-description">Epic run featuring Batman and Catwoman&apos;s relationship, Bane&apos;s master plan.</div>
+                    <span class="tag tag-essential">Essential</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 7 -->
+        <div class="phase-card" data-phase="7">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">7</div>
+              <div class="phase-title-group">
+                <h3>Death &amp; Doom</h3>
+                <span class="phase-years">2020 - 2022</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>⛔ EVENT PAUSE - Read First</h4>
+              <p><strong>Dark Nights: Death Metal</strong> - The Batman Who Laughs becomes the Darkest Knight. Wonder Woman leads the charge. The multiverse is remade as the Omniverse.</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>🌌 Core Events</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-death-metal">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Dark Nights: Death Metal</div>
+                    <div class="reading-meta">Scott Snyder (2020-21)</div>
+                    <div class="reading-description">The finale of the Metal saga. Everything matters. The Omniverse is born.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-infinite-frontier">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Infinite Frontier</div>
+                    <div class="reading-meta">2021</div>
+                    <div class="reading-description">The new status quo. Justice League Incarnate explores the Omniverse.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 8 -->
+        <div class="phase-card" data-phase="8">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">8</div>
+              <div class="phase-title-group">
+                <h3>Dark Crisis</h3>
+                <span class="phase-years">2022 - 2023</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="event-banner">
+              <h4>⛔ EVENT PAUSE - Read First</h4>
+              <p><strong>Dark Crisis on Infinite Earths</strong> - The Justice League is dead. Pariah and the Great Darkness attack. The legacy heroes must step up.</p>
+            </div>
+            
+            <div class="reading-section">
+              <h4>🌌 Core Events</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-dark-crisis">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Dark Crisis on Infinite Earths</div>
+                    <div class="reading-meta">Joshua Williamson (2022)</div>
+                    <div class="reading-description">Legacy heroes unite against the Great Darkness. Jon Kent and the new generation rise.</div>
+                    <span class="tag tag-event">Major Event</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 9 -->
+        <div class="phase-card" data-phase="9">
+          <div class="phase-header" onclick="togglePhase(this)">
+            <div class="phase-info">
+              <div class="phase-number dc">9</div>
+              <div class="phase-title-group">
+                <h3>Dawn of DC / All In</h3>
+                <span class="phase-years">2023 - Present</span>
+              </div>
+            </div>
+            <button class="phase-toggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="phase-content">
+            <div class="reading-section">
+              <h4>🦇 Batman Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-batman-zdarsky">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Batman by Chip Zdarsky</div>
+                    <div class="reading-meta">Batman #125+</div>
+                    <div class="reading-description">Current Batman run. Failsafe, the Joker Year One, and more.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reading-section">
+              <h4>🦸 Superman Track</h4>
+              <div class="reading-list">
+                <div class="reading-item" data-comic="dc-superman-warworld">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Superman: Warworld Saga</div>
+                    <div class="reading-meta">Action Comics by PKJ</div>
+                    <div class="reading-description">Superman leads a revolution on Warworld against Mongul.</div>
+                  </div>
+                </div>
+                <div class="reading-item" data-comic="dc-superman-waid">
+                  <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+                  <div class="reading-details">
+                    <div class="reading-title">Superman by Joshua Williamson</div>
+                    <div class="reading-meta">Superman #1+</div>
+                    <div class="reading-description">Current Superman run. The Superman family expands.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Miclase Comic Multiverse - Your Guide to Comic Book Reading Orders</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/dc.js"></script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elseworlds - Miclase Comic Multiverse</title>
+  <meta name="description" content="Alternate universes, what-ifs, and standalone masterpieces from DC and Marvel.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        Miclase Comic Multiverse
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="dc.html" class="nav-link dc-link">DC</a></li>
+        <li><a href="marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="roster.html" class="nav-link">Roster</a></li>
+        <li><a href="essentials.html" class="nav-link">Essentials</a></li>
+        <li><a href="elseworlds.html" class="nav-link active">Elseworlds</a></li>
+        <li><a href="instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Elseworlds</span>
+        </div>
+        <h1>Elseworlds &amp; What-Ifs</h1>
+        <p>Alternate universes, standalone masterpieces, and stories outside the main continuity. Read anytime!</p>
+      </header>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active dc" onclick="switchTab('dc')">DC Elseworlds</button>
+        <button class="tab-btn marvel" onclick="switchTab('marvel')">Marvel What-Ifs</button>
+        <button class="tab-btn" onclick="switchTab('ultimate')">Ultimate Universe</button>
+      </div>
+
+      <!-- DC Tab Content -->
+      <div class="tab-content active" id="dc-tab">
+        <h2 style="margin-bottom: 1.5rem;">DC Elseworlds</h2>
+        <div class="elseworlds-grid">
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Elseworlds</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Batman: Gotham by Gaslight</h3>
+              <p class="reading-description">Victorian-era Batman hunts Jack the Ripper. The first official Elseworlds story.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Elseworlds</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Superman: Red Son</h3>
+              <p class="reading-description">What if Superman&apos;s rocket landed in the Soviet Union instead of Kansas?</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Elseworlds</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Kingdom Come</h3>
+              <p class="reading-description">Alex Ross painted masterpiece. Future DCU where heroes have lost their way.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Elseworlds</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">The Dark Knight Returns</h3>
+              <p class="reading-description">Frank Miller&apos;s aging Batman comes out of retirement. Definitive dark future Batman.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Elseworlds</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">All-Star Superman</h3>
+              <p class="reading-description">Grant Morrison&apos;s definitive Superman story. What if Superman was dying?</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Masterpiece</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Elseworlds</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Batman: The Doom That Came to Gotham</h3>
+              <p class="reading-description">Lovecraftian horror meets Batman. 1920s setting with cosmic dread.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Elseworlds</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Superman: Speeding Bullets</h3>
+              <p class="reading-description">Kal-El raised by the Waynes. Superman becomes Batman.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Vertigo</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">The Sandman</h3>
+              <p class="reading-description">Neil Gaiman&apos;s masterpiece. Dream of the Endless. Essential comics reading.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Masterpiece</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Watchmen</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Watchmen</h3>
+              <p class="reading-description">Alan Moore&apos;s deconstruction of superheroes. One of the greatest comics ever made.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Masterpiece</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">DCAU</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Batman Adventures</h3>
+              <p class="reading-description">Tie-in to Batman: The Animated Series. Standalone quality stories.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Elseworlds</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">JLA/Avengers</h3>
+              <p class="reading-description">The crossover that shouldn&apos;t exist but does. DC meets Marvel officially.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth One</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Batman: Earth One</h3>
+              <p class="reading-description">Modern retelling of Batman&apos;s origin. Great entry point.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marvel Tab Content -->
+      <div class="tab-content" id="marvel-tab">
+        <h2 style="margin-bottom: 1.5rem;">Marvel What-Ifs &amp; Alternate Realities</h2>
+        <div class="elseworlds-grid">
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Standalone</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Marvels</h3>
+              <p class="reading-description">Kurt Busiek &amp; Alex Ross. The Marvel Universe through a photographer&apos;s eyes.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Masterpiece</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth-807128</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Old Man Logan</h3>
+              <p class="reading-description">Mark Millar&apos;s dystopian future. Wolverine in a world where villains won.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth X</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Earth X / Universe X / Paradise X</h3>
+              <p class="reading-description">Massive alternate future trilogy. Everyone has powers. Deep mythology.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Standalone</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Spider-Man: Life Story</h3>
+              <p class="reading-description">Peter Parker ages in real time from the 60s to now.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Standalone</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Fantastic Four: Life Story</h3>
+              <p class="reading-description">The FF age in real time through Marvel&apos;s history.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth-9997</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Spider-Man: Reign</h3>
+              <p class="reading-description">Dark Knight Returns homage. Old Spider-Man in dark future NYC.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Standalone</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ruins</h3>
+              <p class="reading-description">Warren Ellis&apos;s &quot;what if everything went wrong&quot; Marvel. Dark and disturbing.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Standalone</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Wolverine: Weapon X</h3>
+              <p class="reading-description">Barry Windsor-Smith&apos;s origin of Weapon X. Definitive Wolverine backstory.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Standalone</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">The Death of Captain Marvel</h3>
+              <p class="reading-description">Jim Starlin. Mar-Vell faces mortality. One of comics&apos; most poignant deaths.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Standalone</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Daredevil: The Man Without Fear</h3>
+              <p class="reading-description">Miller &amp; Romita Jr. Gritty origin retelling.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Standalone</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">X-Men: God Loves, Man Kills</h3>
+              <p class="reading-description">Claremont&apos;s most explicit mutant metaphor. Timeless and powerful.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Standalone</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Silver Surfer: Parable</h3>
+              <p class="reading-description">Stan Lee &amp; Moebius. Galactus returns as a god. Philosophical masterpiece.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ultimate Universe Tab Content -->
+      <div class="tab-content" id="ultimate-tab">
+        <h2 style="margin-bottom: 1.5rem;">Ultimate Universe</h2>
+        <p style="margin-bottom: 2rem; color: var(--text-secondary);">The Ultimate Universe (Earth-1610) was a modern retelling of Marvel characters starting in 2000. Read as a separate continuity.</p>
+        
+        <div class="elseworlds-grid">
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth-1610</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ultimate Spider-Man</h3>
+              <p class="reading-description">Brian Michael Bendis. Modern Peter Parker. THE entry point to Ultimate.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Start Here</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth-1610</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">The Ultimates</h3>
+              <p class="reading-description">Mark Millar &amp; Bryan Hitch. Cinematic Avengers before the MCU.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth-1610</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ultimate X-Men</h3>
+              <p class="reading-description">Modern X-Men. More grounded mutant stories.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth-1610</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ultimate Fantastic Four</h3>
+              <p class="reading-description">Younger FF. Introduces the Maker (evil Reed Richards).</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth-1610</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ultimate Galactus Trilogy</h3>
+              <p class="reading-description">Nightmare, Secret, Extinction. Ultimate Galactus is a swarm.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth-1610</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ultimatum</h3>
+              <p class="reading-description">Controversial event. Magneto attacks. Many heroes die. Warning: Dark.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">Earth-1610</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ultimate Comics Spider-Man (Miles Morales)</h3>
+              <p class="reading-description">Miles takes over after Peter. Origin of a new Spider-Man.</p>
+              <span class="tag tag-essential" style="margin-top: 0.5rem;">Classic</span>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">New Ultimate</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ultimate Spider-Man (2024)</h3>
+              <p class="reading-description">Jonathan Hickman. New Ultimate Universe. Peter as adult Spider-Man.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">New Ultimate</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ultimate Black Panther (2024)</h3>
+              <p class="reading-description">New Ultimate Wakanda. Fresh take on T&apos;Challa.</p>
+            </div>
+          </div>
+
+          <div class="elseworld-card">
+            <div class="elseworld-header">
+              <span class="elseworld-universe">New Ultimate</span>
+            </div>
+            <div class="elseworld-content">
+              <h3 class="elseworld-title">Ultimates (2024)</h3>
+              <p class="reading-description">New Ultimate team. Hickman&apos;s new universe expands.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Miclase Comic Multiverse - Your Guide to Comic Book Reading Orders</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/elseworlds.js"></script>
+</body>
+</html>

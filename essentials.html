@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essential Reads - Miclase Comic Multiverse</title>
+  <meta name="description" content="The must-read stories that define the DC and Marvel universes.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        Miclase Comic Multiverse
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="dc.html" class="nav-link dc-link">DC</a></li>
+        <li><a href="marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="roster.html" class="nav-link">Roster</a></li>
+        <li><a href="essentials.html" class="nav-link active">Essentials</a></li>
+        <li><a href="elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Essential Reads</span>
+        </div>
+        <h1>Essential Reads</h1>
+        <p>The must-read stories that define each universe. Perfect for newcomers or those short on time.</p>
+      </header>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active dc" onclick="switchTab('dc')">DC Essentials</button>
+        <button class="tab-btn marvel" onclick="switchTab('marvel')">Marvel Essentials</button>
+      </div>
+
+      <!-- DC Tab Content -->
+      <div class="tab-content active" id="dc-tab">
+        <div class="reading-section">
+          <h4>🦇 Batman Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: Year One</div>
+                <div class="reading-meta">Frank Miller &amp; David Mazzucchelli</div>
+                <div class="reading-description">The definitive Batman origin. Start here.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: The Long Halloween</div>
+                <div class="reading-meta">Jeph Loeb &amp; Tim Sale</div>
+                <div class="reading-description">Year-spanning mystery. Harvey Dent&apos;s fall.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: The Killing Joke</div>
+                <div class="reading-meta">Alan Moore &amp; Brian Bolland</div>
+                <div class="reading-description">Definitive Joker story. Barbara Gordon&apos;s fate.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: Hush</div>
+                <div class="reading-meta">Jeph Loeb &amp; Jim Lee</div>
+                <div class="reading-description">Tour of Batman&apos;s rogues gallery.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Batman: Court of Owls</div>
+                <div class="reading-meta">Scott Snyder &amp; Greg Capullo</div>
+                <div class="reading-description">Modern classic. Secret society controls Gotham.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading-section">
+          <h4>🦸 Superman Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">All-Star Superman</div>
+                <div class="reading-meta">Grant Morrison &amp; Frank Quitely</div>
+                <div class="reading-description">THE Superman story. If you read one Superman comic, read this.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Superman: Birthright</div>
+                <div class="reading-meta">Mark Waid &amp; Leinil Francis Yu</div>
+                <div class="reading-description">Modern origin story.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">The Death of Superman</div>
+                <div class="reading-meta">Various</div>
+                <div class="reading-description">Iconic storyline. Doomsday arrives.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Superman: For All Seasons</div>
+                <div class="reading-meta">Jeph Loeb &amp; Tim Sale</div>
+                <div class="reading-description">Beautiful, heartfelt look at Clark&apos;s early years.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading-section">
+          <h4>⚡ Flash Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">The Flash by Mark Waid</div>
+                <div class="reading-meta">Book 1-5</div>
+                <div class="reading-description">Definitive Wally West run. Introduces the Speed Force.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Flashpoint</div>
+                <div class="reading-meta">Geoff Johns &amp; Andy Kubert</div>
+                <div class="reading-description">Barry Allen creates an alternate timeline.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading-section">
+          <h4>💚 Green Lantern Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Green Lantern: Rebirth</div>
+                <div class="reading-meta">Geoff Johns</div>
+                <div class="reading-description">Hal Jordan returns. Parallax revealed.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Sinestro Corps War</div>
+                <div class="reading-meta">Geoff Johns</div>
+                <div class="reading-description">Epic cosmic war. Yellow Lanterns attack.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Blackest Night</div>
+                <div class="reading-meta">Geoff Johns</div>
+                <div class="reading-description">All Lantern Corps unite against the dead.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading-section">
+          <h4>⚖️ Justice League &amp; Events</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Crisis on Infinite Earths</div>
+                <div class="reading-meta">Marv Wolfman &amp; George Perez</div>
+                <div class="reading-description">THE Crisis. The multiverse is born.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">JLA by Grant Morrison</div>
+                <div class="reading-meta">Grant Morrison</div>
+                <div class="reading-description">Definitive Justice League. Big Seven.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Identity Crisis</div>
+                <div class="reading-meta">Brad Meltzer</div>
+                <div class="reading-description">Dark secrets of the League exposed.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Final Crisis</div>
+                <div class="reading-meta">Grant Morrison</div>
+                <div class="reading-description">Darkseid wins. The day evil won.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marvel Tab Content -->
+      <div class="tab-content" id="marvel-tab">
+        <div class="reading-section">
+          <h4>🕷️ Spider-Man Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Amazing Spider-Man #121-122</div>
+                <div class="reading-meta">&quot;The Night Gwen Stacy Died&quot;</div>
+                <div class="reading-description">The end of Silver Age innocence. Pivotal moment in comics history.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Kraven&apos;s Last Hunt</div>
+                <div class="reading-meta">J.M. DeMatteis</div>
+                <div class="reading-description">Dark, psychological Spider-Man story.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Ultimate Spider-Man</div>
+                <div class="reading-meta">Brian Michael Bendis</div>
+                <div class="reading-description">Modern retelling. Great starting point.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Superior Spider-Man</div>
+                <div class="reading-meta">Dan Slott</div>
+                <div class="reading-description">Doc Ock in Peter&apos;s body. Unique take.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading-section">
+          <h4>🧬 X-Men Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Dark Phoenix Saga</div>
+                <div class="reading-meta">Claremont &amp; Byrne</div>
+                <div class="reading-description">THE X-Men story. Jean Grey consumed by cosmic power.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Days of Future Past</div>
+                <div class="reading-meta">Claremont &amp; Byrne</div>
+                <div class="reading-description">Dystopian future. Time travel consequences.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">God Loves, Man Kills</div>
+                <div class="reading-meta">Chris Claremont</div>
+                <div class="reading-description">The mutant metaphor at its most explicit.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">House of X / Powers of X</div>
+                <div class="reading-meta">Jonathan Hickman</div>
+                <div class="reading-description">Modern X-Men renaissance. Krakoa era begins.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading-section">
+          <h4>⚔️ Avengers Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">The Korvac Saga</div>
+                <div class="reading-meta">Jim Shooter</div>
+                <div class="reading-description">Classic cosmic Avengers. Godhood and sacrifice.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Under Siege</div>
+                <div class="reading-meta">Roger Stern</div>
+                <div class="reading-description">Baron Zemo destroys Avengers Mansion.</div>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Avengers: Disassembled</div>
+                <div class="reading-meta">Brian Michael Bendis</div>
+                <div class="reading-description">Scarlet Witch breaks reality. The Avengers end.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Civil War</div>
+                <div class="reading-meta">Mark Millar</div>
+                <div class="reading-description">Hero vs hero. Registration Act.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading-section">
+          <h4>💎 Cosmic Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">The Infinity Gauntlet</div>
+                <div class="reading-meta">Jim Starlin</div>
+                <div class="reading-description">Thanos wields ultimate power. THE cosmic event.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Annihilation</div>
+                <div class="reading-meta">Keith Giffen</div>
+                <div class="reading-description">Cosmic Marvel renaissance. Annihilus destroys everything.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Guardians of the Galaxy</div>
+                <div class="reading-meta">Abnett &amp; Lanning</div>
+                <div class="reading-description">The team that inspired the movies.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading-section">
+          <h4>😈 Daredevil Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Daredevil: Born Again</div>
+                <div class="reading-meta">Frank Miller</div>
+                <div class="reading-description">Kingpin destroys Matt&apos;s life. THE Daredevil story.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Daredevil by Bendis</div>
+                <div class="reading-meta">Brian Michael Bendis &amp; Alex Maleev</div>
+                <div class="reading-description">Modern noir classic.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading-section">
+          <h4>🟢 Hulk Essentials</h4>
+          <div class="reading-list">
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Planet Hulk</div>
+                <div class="reading-meta">Greg Pak</div>
+                <div class="reading-description">Hulk as gladiator and king on alien world.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+            <div class="reading-item">
+              <div class="reading-checkbox" onclick="toggleRead(this)"></div>
+              <div class="reading-details">
+                <div class="reading-title">Immortal Hulk</div>
+                <div class="reading-meta">Al Ewing</div>
+                <div class="reading-description">Horror Hulk. Best modern Hulk run.</div>
+                <span class="tag tag-essential">Must Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Miclase Comic Multiverse - Your Guide to Comic Book Reading Orders</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/essentials.js"></script>
+</body>
+</html>
