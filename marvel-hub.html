@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Phases - Reading Roadmap</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Miclase Comic Multiverse</a>
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">☀️</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="dc-hub.html" class="nav-link dc-link">DC</a></li>
+        <li><a href="marvel-hub.html" class="nav-link marvel-link active">Marvel</a></li>
+        <li><a href="roster-new.html" class="nav-link">Roster</a></li>
+        <li><a href="essentials-new.html" class="nav-link">Essentials</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Marvel Reading Roadmap</h1>
+      <p class="phase-subtitle">Explore All Phases of the Marvel Cinematic Universe</p>
+    </div>
+
+    <section class="phases-grid">
+      <a href="marvel-phases/phase0.html" class="phase-card">
+        <h3>Phase 0</h3>
+        <p>Silver Age Foundations</p>
+        <span class="phase-date">1961-1990</span>
+      </a>
+
+      <a href="marvel-phases/phase1.html" class="phase-card">
+        <h3>Phase 1</h3>
+        <p>The Avengers Initiative</p>
+        <span class="phase-date">2008-2012</span>
+      </a>
+
+      <a href="marvel-phases/phase2.html" class="phase-card">
+        <h3>Phase 2</h3>
+        <p>The Quantum Realm Emerges</p>
+        <span class="phase-date">2013-2015</span>
+      </a>
+
+      <a href="marvel-phases/phase3.html" class="phase-card">
+        <h3>Phase 3</h3>
+        <p>The Infinity War</p>
+        <span class="phase-date">2016-2019</span>
+      </a>
+
+      <a href="marvel-phases/phase4.html" class="phase-card">
+        <h3>Phase 4</h3>
+        <p>The Multiverse Saga Begins</p>
+        <span class="phase-date">2020-2022</span>
+      </a>
+
+      <a href="marvel-phases/phase5.html" class="phase-card">
+        <h3>Phase 5</h3>
+        <p>Multiverse Masters</p>
+        <span class="phase-date">2023</span>
+      </a>
+
+      <a href="marvel-phases/phase6.html" class="phase-card">
+        <h3>Phase 6</h3>
+        <p>The New Avengers</p>
+        <span class="phase-date">2024 onwards</span>
+      </a>
+
+      <a href="marvel-phases/phase7.html" class="phase-card">
+        <h3>Phase 7</h3>
+        <p>Multiverse Mastery</p>
+        <span class="phase-date">Continued Evolution</span>
+      </a>
+
+      <a href="marvel-phases/phase8.html" class="phase-card">
+        <h3>Phase 8</h3>
+        <p>Cosmic Convergence</p>
+        <span class="phase-date">Future Storylines</span>
+      </a>
+
+      <a href="marvel-phases/phase9.html" class="phase-card">
+        <h3>Phase 9</h3>
+        <p>The Final Infinity</p>
+        <span class="phase-date">Ultimate Resolution</span>
+      </a>
+
+      <a href="marvel-phases/phase10.html" class="phase-card">
+        <h3>Phase 10</h3>
+        <p>New Horizons</p>
+        <span class="phase-date">Beyond Multiverse</span>
+      </a>
+    </section>
+
+    <section class="track-section" style="margin-top: 3rem;">
+      <h2>How to Use This Roadmap</h2>
+      <p>Each phase contains concurrent reading tracks organized by character or team. Click on any phase above to see the recommended reading order, including:</p>
+      <ul class="status-list">
+        <li><strong>Event Overview:</strong> The major event or conflict of the phase</li>
+        <li><strong>Concurrent Tracks:</strong> Follow individual character journeys in parallel</li>
+        <li><strong>Post-Event Status Quo:</strong> Where the universe stands after the phase</li>
+        <li><strong>Progress Tracking:</strong> Check off comics as you read them</li>
+      </ul>
+    </section>
+
+    <section style="text-align: center; margin-top: 2rem;">
+      <a href="index.html" class="nav-button">← Back to Home</a>
+    </section>
+  </main>
+
+  <style>
+    .phases-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .phase-card {
+      background: var(--bg-card);
+      border: 2px solid var(--accent-marvel);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: all var(--transition-normal);
+      text-align: center;
+    }
+
+    .phase-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-gold);
+    }
+
+    .phase-card h3 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+      color: var(--accent-marvel);
+    }
+
+    .phase-card p {
+      color: var(--text-secondary);
+      margin: 0.5rem 0;
+    }
+
+    .phase-date {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+    }
+  </style>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
