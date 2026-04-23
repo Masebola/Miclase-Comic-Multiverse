@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Phase 5: The New 52 | Miclase Comic Multiverse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="../index.html" class="navbar-brand">Miclase Comic Multiverse</a>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../dc-hub.html" class="nav-link dc-link active">DC</a></li>
+        <li><a href="../marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="../roster-new.html" class="nav-link">Roster</a></li>
+        <li><a href="../essentials-new.html" class="nav-link">Essentials</a></li>
+        <li><a href="../elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="../instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">☀️</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Phase Header -->
+      <div class="phase-header dc-glow">
+        <a href="../dc-hub.html" class="back-link">&larr; Back to DC Phases</a>
+        <h1>Phase 5: The New 52</h1>
+        <div class="phase-meta">
+          <span class="phase-years">Years: 2011 - 2016</span>
+          <span class="phase-event">Anchor Event: DC Rebirth</span>
+        </div>
+        <p class="phase-description">A hard reboot. Younger heroes. Edgier tone. Some characters erased, others reimagined. The continuity is compressed into a 5-year timeline.</p>
+      </div>
+
+      <!-- Progress Tracker -->
+      <div class="progress-section">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+        <span class="progress-text" id="progressText">0 / 0 completed</span>
+      </div>
+
+      <!-- Event Pause Section -->
+      <section class="event-section">
+        <h2 class="section-title event-title">EVENT PAUSE - READ FIRST</h2>
+        <div class="event-card">
+          <h3>Forever Evil (2013-14)</h3>
+          <div class="event-details">
+            <p><strong>What it is:</strong> The Crime Syndicate (evil Justice League from Earth-3) invades and conquers Earth. The villains must save the world because the heroes are dead/trapped.</p>
+            <p><strong>Why it matters:</strong> Establishes the New 52's major villain organizations. Lex Luthor becomes a hero (temporarily). Dick Grayson is outed as Nightwing to the world.</p>
+            <p><strong>Core reading:</strong> Forever Evil #1-7, Forever Evil: Arkham War, Forever Evil: Rogues Rebellion, Forever Evil: Blight.</p>
+          </div>
+          <label class="comic-checkbox">
+            <input type="checkbox" data-comic="dc-p5-event-foreverevil">
+            <span class="checkmark"></span>
+            <span>Mark as Read</span>
+          </label>
+        </div>
+        <div class="event-card">
+          <h3>DC Rebirth (2016)</h3>
+          <div class="event-details">
+            <p><strong>What it is:</strong> Not an event but a line-wide relaunch. Wally West returns from the Speed Force. The New 52 Superman dies. The pre-Flashpoint Superman replaces him. The timeline was stolen.</p>
+            <p><strong>Why it matters:</strong> Soft-reboot that restores pre-Flashpoint elements. Wally West is back. The JSA and Titans history is hinted at returning.</p>
+            <p><strong>Core reading:</strong> DC Universe: Rebirth #1, Batman: Rebirth, Superman: Rebirth, Green Lanterns: Rebirth, The Flash: Rebirth, Titans: Rebirth, Nightwing: Rebirth.</p>
+          </div>
+          <label class="comic-checkbox">
+            <input type="checkbox" data-comic="dc-p5-event-rebirth">
+            <span class="checkmark"></span>
+            <span>Mark as Read</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Concurrent Reading Tracks -->
+      <section class="tracks-section">
+        <h2 class="section-title">CONCURRENT READING TRACKS</h2>
+
+        <!-- Bat-Family Track -->
+        <div class="track-card" id="bat-family">
+          <div class="track-header">
+            <h3 class="track-title">Bat-Family Track</h3>
+            <span class="track-icon">🦇</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-courtofowls">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: The Court of Owls / Night of the Owls (Batman #1-11, 2011-12)</span>
+                <span class="comic-desc">The Court of Owls is introduced. A secret society that has ruled Gotham for centuries. Talon is their assassin.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-deathfamily">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Death of the Family (Batman #13-17, 2012-13)</span>
+                <span class="comic-desc">Joker returns, believes he knows Batman's identity, attacks the Bat-Family.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-zeroyear">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Zero Year (Batman #21-33, 2013-14)</span>
+                <span class="comic-desc">New 52 Batman origin. Riddler destroys Gotham's infrastructure.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-endgame">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Endgame (Batman #35-40, 2014-15)</span>
+                <span class="comic-desc">Joker's "final" battle with Batman. Both are left for dead.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-superheavy">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Superheavy (Batman #41-50, 2015-16)</span>
+                <span class="comic-desc">Jim Gordon is Batman in a mech suit. Bruce Wayne has no memory.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-grayson">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Grayson (2014-16)</span>
+                <span class="comic-desc">Dick Grayson as a spy for Spyral. His identity is public, so he goes undercover globally.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-batgirl">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batgirl (Barbara Gordon) (2011-16)</span>
+                <span class="comic-desc">Barbara is no longer Oracle. She has a neural implant that lets her walk. Her own solo series.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-burnside">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batgirl (Burnside era) (2014-16)</span>
+                <span class="comic-desc">Barbara moves to Burnside. Lighter tone, tech-focused.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-redhood">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Red Hood and the Outlaws (2011-16)</span>
+                <span class="comic-desc">Jason Todd, Arsenal (Roy Harper), and Starfire as a team of anti-heroes.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-batwoman">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batwoman by J.H. Williams III (2011-13)</span>
+                <span class="comic-desc">Kate Kane's visually stunning solo series. Her conflict with the DEO and her sister Beth (Alice).</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-bat-harley">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Harley Quinn by Amanda Conner/Jimmy Palmiotti (2013-16)</span>
+                <span class="comic-desc">Harley leaves Joker, moves to Coney Island, becomes an anti-hero.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Flash Family Track -->
+        <div class="track-card" id="flash-family">
+          <div class="track-header">
+            <h3 class="track-title">Flash Family Track</h3>
+            <span class="track-icon">⚡</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-flash-moveforward">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Move Forward (The Flash #1-8, 2011-12)</span>
+                <span class="comic-desc">Barry Allen's New 52 origin. Mob Rule, the Speed Force storm.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-flash-rogues">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Rogues Revolution (The Flash #9-17, 2012-13)</span>
+                <span class="comic-desc">The Rogues get powers. Captain Cold can manipulate absolute zero.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-flash-reverse">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Reverse (The Flash #20-25, 2013)</span>
+                <span class="comic-desc">Daniel West becomes the Reverse-Flash.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-flash-outoftime">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Out of Time (The Flash #30-35, 2014-15)</span>
+                <span class="comic-desc">Wally West returns (briefly, then vanishes again). Future Flash (Barry from 20 years ahead) appears.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Lantern Track -->
+        <div class="track-card" id="lantern">
+          <div class="track-header">
+            <h3 class="track-title">Lantern Track</h3>
+            <span class="track-icon">💚</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-gl-sinestro">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: Sinestro (Green Lantern #1-6, 2011-12)</span>
+                <span class="comic-desc">Sinestro becomes a Green Lantern again. Hal Jordan is his unwilling partner.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-gl-blackhand">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: Revenge of the Black Hand (Green Lantern #7-12, 2012)</span>
+                <span class="comic-desc">Black Hand returns. The Book of the Black.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-gl-thirdarmy">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: The Third Army (Green Lantern #13-16, Annual #1, 2012-13)</span>
+                <span class="comic-desc">The Guardians create a new emotionless army.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-gl-firstlantern">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: Wrath of the First Lantern (Green Lantern #17-20, 2013)</span>
+                <span class="comic-desc">Volthoom, the First Lantern, escapes.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-gl-corps">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern Corps by Peter Tomasi (2011-15)</span>
+                <span class="comic-desc">Guy Gardner and John Stewart protect the universe.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-gl-redlanterns">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Red Lanterns by Charles Soule (2013-16)</span>
+                <span class="comic-desc">Guy Gardner leads the Red Lanterns. Atrocitus is deposed.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-gl-newguardians">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: New Guardians (2011-15)</span>
+                <span class="comic-desc">Kyle Rayner masters all seven emotional spectrum colors.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Superman Track -->
+        <div class="track-card" id="superman">
+          <div class="track-header">
+            <h3 class="track-title">Superman Track</h3>
+            <span class="track-icon">🔴</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-sm-whatprice">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: What Price Tomorrow? (Superman #1-8, 2011-12)</span>
+                <span class="comic-desc">New 52 Superman. Younger, more aggressive, dating Wonder Woman.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-sm-helonearth">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: H'El on Earth (2012-13)</span>
+                <span class="comic-desc">A Kryptonian survivor claims to be Superman's superior. H'El is a villain who loves Krypton more than life.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-sm-doomed">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Doomed (2014)</span>
+                <span class="comic-desc">Doomsday infects Superman. He becomes a Doomsday-Superman hybrid.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-sm-truth">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Before Truth (2015)</span>
+                <span class="comic-desc">Superman's secret identity is exposed to the world.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-sm-finaldays">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: The Final Days of Superman (2016)</span>
+                <span class="comic-desc">New 52 Superman dies. The pre-Flashpoint Superman (married to Lois, with son Jon) replaces him.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Wonder Woman Track -->
+        <div class="track-card" id="wonder-woman">
+          <div class="track-header">
+            <h3 class="track-title">Wonder Woman Track</h3>
+            <span class="track-icon">⭐</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-ww-blood">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: Blood / Guts / Iron (Wonder Woman #1-18, 2011-13)</span>
+                <span class="comic-desc">Brian Azzarello's run. Diana is Zeus's daughter. The Greek gods are reimagined as grotesque, modern figures.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-ww-war">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: War (Wonder Woman #19-23, 2013)</span>
+                <span class="comic-desc">The First Born, Zeus's eldest son, returns to claim Olympus.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-ww-lies">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: The Lies / Year One (2016, Rebirth)</span>
+                <span class="comic-desc">Greg Rucka returns. The New 52 origin is revealed as a lie. The true origin is restored.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Titans / Justice League Track -->
+        <div class="track-card" id="titans-jl">
+          <div class="track-header">
+            <h3 class="track-title">Titans / Justice League Track</h3>
+            <span class="track-icon">🌊</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-jl-origin">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League: Origin (2011-12)</span>
+                <span class="comic-desc">The New 52 League forms. Darkseid invades Earth.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-jl-throne">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League: Throne of Atlantis (2012-13)</span>
+                <span class="comic-desc">Orm (Ocean Master) attacks the surface world. Aquaman must choose sides.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-jl-amazovirus">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League: The Amazo Virus (2014-15)</span>
+                <span class="comic-desc">Lex Luthor joins the Justice League.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-jl-darkseidwar">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League: Darkseid War (2015-16)</span>
+                <span class="comic-desc">Darkseid dies. The Anti-Monitor returns. The New Gods are reborn as mortals.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-tt-lobdell">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Teen Titans by Scott Lobdell (2011-14)</span>
+                <span class="comic-desc">Red Robin leads a team of young heroes.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cosmic / New Gods Track -->
+        <div class="track-card" id="cosmic">
+          <div class="track-header">
+            <h3 class="track-title">Cosmic / New Gods Track</h3>
+            <span class="track-icon">🌌</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-cosmic-earth2">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Earth 2 (2012-15)</span>
+                <span class="comic-desc">A world where Batman, Superman, and Wonder Woman die fighting Darkseid. New heroes emerge.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-cosmic-worldsend">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Earth 2: World's End (2014-15)</span>
+                <span class="comic-desc">Earth 2 is destroyed. Survivors flee to Prime Earth.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Magic / Vertigo Track -->
+        <div class="track-card" id="magic">
+          <div class="track-header">
+            <h3 class="track-title">Magic / Vertigo Track</h3>
+            <span class="track-icon">🔮</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-magic-jld">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League Dark (2011-15)</span>
+                <span class="comic-desc">John Constantine, Zatanna, Deadman, and others form a magic League.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-magic-constantine">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Constantine (2013-15)</span>
+                <span class="comic-desc">John Constantine in the main DCU (not Vertigo).</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-magic-phantomstranger">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Trinity of Sin: The Phantom Stranger (2012-14)</span>
+                <span class="comic-desc">The Stranger's origin is revealed. He is Judas Iscariot.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Archers / Street Track -->
+        <div class="track-card" id="archers">
+          <div class="track-header">
+            <h3 class="track-title">Archers / Street Track</h3>
+            <span class="track-icon">🏹</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-archers-lemire">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Arrow by Jeff Lemire (2013-15)</span>
+                <span class="comic-desc">The Outsiders War. Oliver Queen's origin is redefined with a mystical element.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-archers-percy">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Arrow by Benjamin Percy (2015-16)</span>
+                <span class="comic-desc">Rebirth setup. Ollie faces the Ninth Circle.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Martial Arts Track -->
+        <div class="track-card" id="martial-arts">
+          <div class="track-header">
+            <h3 class="track-title">Martial Arts Track</h3>
+            <span class="track-icon">🥋</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-martial-batmaninc">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman Incorporated: Demon Star / Gotham's Most Wanted (2012-13)</span>
+                <span class="comic-desc">Batman's global army faces Leviathan (Talia al Ghul's organization).</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-martial-batwing">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batwing (2011-14)</span>
+                <span class="comic-desc">Lucius Fox's son David is Batwing in Africa.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Atlantis Track -->
+        <div class="track-card" id="atlantis">
+          <div class="track-header">
+            <h3 class="track-title">Atlantis Track</h3>
+            <span class="track-icon">🌊</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-atlantis-trench">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Aquaman: The Trench (Aquaman #1-6, 2011)</span>
+                <span class="comic-desc">Aquaman faces deep-sea horrors.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-atlantis-others">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Aquaman: The Others (Aquaman #7-13, 2012-13)</span>
+                <span class="comic-desc">Arthur's pre-Justice League team. Black Manta kills one of them.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-atlantis-deathking">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Aquaman: Death of a King (Aquaman #17-24, 2013-14)</span>
+                <span class="comic-desc">The Dead King, first king of Atlantis, returns.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Villain Track -->
+        <div class="track-card villain-track" id="villain">
+          <div class="track-header">
+            <h3 class="track-title">Villain Track</h3>
+            <span class="track-icon">💀</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-villain-foreverevil">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Forever Evil (2013-14)</span>
+                <span class="comic-desc">The Crime Syndicate. Ultraman, Owlman, Superwoman, Johnny Quick, Power Ring, Atomica, Deathstorm. Evil versions of the Justice League.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-villain-arkhamwar">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Forever Evil: Arkham War (2013-14)</span>
+                <span class="comic-desc">Gotham's villains fight for control of the city while the Syndicate rules the world. Bane vs. Scarecrow vs. Penguin.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-villain-rogues">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Forever Evil: Rogues Rebellion (2013-14)</span>
+                <span class="comic-desc">The Rogues refuse to join the Syndicate and fight back. A villain-hero story.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-villain-deathfamily">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Death of the Family (2012-13)</span>
+                <span class="comic-desc">Joker's most personal attack. He believes he is Batman's truest companion.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-villain-endgame">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Endgame (2014-15)</span>
+                <span class="comic-desc">Joker's "final" plan. He poisons Gotham with Joker venom.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-villain-courtowls">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: The Court of Owls (2011-12)</span>
+                <span class="comic-desc">The Court of Owls. A centuries-old conspiracy. Talon as their undead assassin.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-villain-darkseidwar">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League: Darkseid War (2015-16)</span>
+                <span class="comic-desc">Darkseid's death. The Anti-Monitor's return. Grail (Darkseid's daughter) is introduced.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p5-villain-firstlantern">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: Wrath of the First Lantern (2013)</span>
+                <span class="comic-desc">Volthoom. The first Lantern, fueled by the life-force of every being in the universe.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Post-Event Status Quo -->
+      <section class="status-section">
+        <h2 class="section-title">POST-EVENT STATUS QUO</h2>
+        <ul class="status-list">
+          <li>The New 52 is over. DC Rebirth restores pre-Flashpoint continuity.</li>
+          <li>Wally West returns. He is the Flash again (briefly, then Barry resumes).</li>
+          <li>The pre-Flashpoint Superman (married to Lois, father of Jon Kent) is the main Superman.</li>
+          <li>New 52 Superman is dead.</li>
+          <li>Bruce Wayne is Batman. The Bat-Family is partially restored.</li>
+          <li>Green Lantern continuity continues largely uninterrupted.</li>
+          <li>Wonder Woman's origin is corrected back to clay/Amazon heritage.</li>
+          <li>The JSA and Titans history is hinted to be returning.</li>
+        </ul>
+      </section>
+
+      <!-- Elseworlds Vault -->
+      <section class="elseworlds-section">
+        <h2 class="section-title">ELSEWORLDS VAULT: PHASE 5</h2>
+        <div class="elseworlds-grid">
+          <div class="elseworld-card">
+            <h4>Injustice: Gods Among Us (2013-16)</h4>
+            <p>The definitive Elseworlds of the New 52 era. Superman becomes a dictator.</p>
+          </div>
+          <div class="elseworld-card">
+            <h4>Batman: Arkham Unhinged (2011-14)</h4>
+            <p>Arkham City tie-in stories.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+      <div class="phase-navigation">
+        <a href="phase4.html" class="nav-btn">&larr; Phase 4: The Blackest Night</a>
+        <a href="phase6.html" class="nav-btn nav-btn-next">Phase 6: Rebirth & Metal &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Miclase Comic Multiverse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/phase.js"></script>
+</body>
+</html>

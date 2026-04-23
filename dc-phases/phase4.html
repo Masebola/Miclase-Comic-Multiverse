@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Phase 4: The Blackest Night | Miclase Comic Multiverse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="../index.html" class="navbar-brand">Miclase Comic Multiverse</a>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../dc-hub.html" class="nav-link dc-link active">DC</a></li>
+        <li><a href="../marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="../roster-new.html" class="nav-link">Roster</a></li>
+        <li><a href="../essentials-new.html" class="nav-link">Essentials</a></li>
+        <li><a href="../elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="../instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">☀️</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Phase Header -->
+      <div class="phase-header dc-glow">
+        <a href="../dc-hub.html" class="back-link">&larr; Back to DC Phases</a>
+        <h1>Phase 4: The Blackest Night</h1>
+        <div class="phase-meta">
+          <span class="phase-years">Years: 2008 - 2011</span>
+          <span class="phase-event">Anchor Events: Blackest Night / Flashpoint</span>
+        </div>
+        <p class="phase-description">Death rises. Every dead hero and villain returns as a Black Lantern. Nothing stays buried in the DCU.</p>
+      </div>
+
+      <!-- Progress Tracker -->
+      <div class="progress-section">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+        <span class="progress-text" id="progressText">0 / 0 completed</span>
+      </div>
+
+      <!-- Event Pause Section -->
+      <section class="event-section">
+        <h2 class="section-title event-title">EVENT PAUSE - READ FIRST</h2>
+        <div class="event-card">
+          <h3>Blackest Night (2009-10)</h3>
+          <div class="event-details">
+            <p><strong>What it is:</strong> Nekron, lord of the dead, unleashes Black Lantern rings on the deceased. The dead attack the living (temporarily as zombies, some permanently resurrected). The Corps must unite against death itself.</p>
+            <p><strong>Why it matters:</strong> The emotional spectrum is fully revealed. Dead heroes return. Sets up Brightest Day.</p>
+            <p><strong>Core reading:</strong> Blackest Night #0-8, Blackest Night: Batman, Blackest Night: The Flash, Blackest Night: Titans, Green Lantern #43-52.</p>
+          </div>
+          <label class="comic-checkbox">
+            <input type="checkbox" data-comic="dc-p4-event-blackestnight">
+            <span class="checkmark"></span>
+            <span>Mark as Read</span>
+          </label>
+        </div>
+        <div class="event-card">
+          <h3>Flashpoint (2011)</h3>
+          <div class="event-details">
+            <p><strong>What it is:</strong> Barry Allen wakes up in a timeline where his mother never died. Thomas Wayne is Batman. The world is at war.</p>
+            <p><strong>Why it matters:</strong> Barry fixes the timeline but Pandora "merges" three universes (DC, Wildstorm, Vertigo) creating the New 52. The Post-Crisis era ends here.</p>
+            <p><strong>Core reading:</strong> Flashpoint #1-5, Flashpoint: Batman - Knight of Vengeance, Flashpoint: The World of Flashpoint tie-ins for your tracks.</p>
+          </div>
+          <label class="comic-checkbox">
+            <input type="checkbox" data-comic="dc-p4-event-flashpoint">
+            <span class="checkmark"></span>
+            <span>Mark as Read</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Concurrent Reading Tracks -->
+      <section class="tracks-section">
+        <h2 class="section-title">CONCURRENT READING TRACKS</h2>
+
+        <!-- Bat-Family Track -->
+        <div class="track-card" id="bat-family">
+          <div class="track-header">
+            <h3 class="track-title">Bat-Family Track</h3>
+            <span class="track-icon">🦇</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-bat-battlecowl">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Battle for the Cowl (2009)</span>
+                <span class="comic-desc">Bruce is dead. Dick Grayson vs. Jason Todd vs. Tim Drake for the mantle. Dick becomes Batman.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-bat-batmanrobin">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman & Robin by Grant Morrison (2009-11)</span>
+                <span class="comic-desc">Dick and Damian as Batman and Robin. The best dynamic in Gotham.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-bat-blackmirror">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: The Black Mirror (Detective Comics #871-881, 2011)</span>
+                <span class="comic-desc">Dick Batman vs. a villain who knows Gotham's secrets. James Gordon Jr. is a serial killer.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-bat-incorporated">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman Incorporated (2010-11)</span>
+                <span class="comic-desc">Bruce returns and goes global with Batman franchises.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-bat-redrobin">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Red Robin by Christopher Yost (2009-11)</span>
+                <span class="comic-desc">Tim Drake operates solo, believing Bruce is alive.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-bat-batgirlsteph">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batgirl (Stephanie Brown) (2009-11)</span>
+                <span class="comic-desc">Stephanie returns from the dead and becomes Batgirl under Barbara's guidance.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-bat-birdsofprey">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Birds of Prey by Gail Simone (2010-11)</span>
+                <span class="comic-desc">The team reforms with Black Canary, Huntress, Oracle, and newcomer Hawk and Dove.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-bat-sirens">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Gotham City Sirens (2009-11)</span>
+                <span class="comic-desc">Catwoman, Harley Quinn, and Poison Ivy as an uneasy alliance.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Flash Family Track -->
+        <div class="track-card" id="flash-family">
+          <div class="track-header">
+            <h3 class="track-title">Flash Family Track</h3>
+            <span class="track-icon">⚡</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-flash-rebirth">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Rebirth (2009)</span>
+                <span class="comic-desc">Barry Allen returns from the dead. The Speed Force is redefined.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-flash-dastardly">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: The Dastardly Death of the Rogues (The Flash #1-6, 2010-11)</span>
+                <span class="comic-desc">Barry vs. future Rogues.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-flash-roadtoflashpoint">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Road to Flashpoint (The Flash #9-12, 2011)</span>
+                <span class="comic-desc">Barry discovers his mother's killer was a speedster.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Lantern Track -->
+        <div class="track-card" id="lantern">
+          <div class="track-header">
+            <h3 class="track-title">Lantern Track</h3>
+            <span class="track-icon">💚</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-gl-blackestnight">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: Blackest Night (2009-10)</span>
+                <span class="comic-desc">Hal Jordan leads the war against the Black Lanterns.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-gl-brightestday">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: Brightest Day (2010-11)</span>
+                <span class="comic-desc">12 heroes and villains are resurrected. What do they do with their second chance?</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-gl-warofgl">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: War of the Green Lanterns (2011)</span>
+                <span class="comic-desc">Krona returns and enslaves the Guardians. Hal, Guy, John, and Kyle must fight their own Corps.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Superman Track -->
+        <div class="track-card" id="superman">
+          <div class="track-header">
+            <h3 class="track-title">Superman Track</h3>
+            <span class="track-icon">🔴</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-sm-newkrypton">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: New Krypton (2008-09)</span>
+                <span class="comic-desc">100,000 Kryptonians are freed from Brainiac's bottle. They establish a planet opposite Earth.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-sm-worldofnewkrypton">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: World of New Krypton (2009)</span>
+                <span class="comic-desc">Superman lives among his people. Zod leads the Kryptonian military.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-sm-laststand">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Last Stand of New Krypton (2010)</span>
+                <span class="comic-desc">Brainiac attacks New Krypton. Supergirl's mother Alura dies.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-sm-warofsupermen">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: War of the Supermen (2010)</span>
+                <span class="comic-desc">Lex Luthor destroys New Krypton. Superman is the last Kryptonian again (except Kara and the Phantom Zone criminals).</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-sm-grounded">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Grounded (2010-11)</span>
+                <span class="comic-desc">Superman walks across America to reconnect with humanity.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-sm-supergirl">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Supergirl by Sterling Gates (2008-11)</span>
+                <span class="comic-desc">Kara deals with New Krypton's rise and fall. Her mother's death. Her place on Earth.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Wonder Woman Track -->
+        <div class="track-card" id="wonder-woman">
+          <div class="track-header">
+            <h3 class="track-title">Wonder Woman Track</h3>
+            <span class="track-icon">⭐</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-ww-riseolympian">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: Rise of the Olympian (2008-09)</span>
+                <span class="comic-desc">A new champion created by the gods. Diana vs. Achilles.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-ww-warkiller">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: Warkiller (2009)</span>
+                <span class="comic-desc">Diana vs. the Olympian gods in open war.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-ww-odyssey">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: Odyssey (2010-11)</span>
+                <span class="comic-desc">A rewritten timeline where Diana was raised away from Themyscira.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Titans / Justice League Track -->
+        <div class="track-card" id="titans-jl">
+          <div class="track-header">
+            <h3 class="track-title">Titans / Justice League Track</h3>
+            <span class="track-icon">🌊</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-jl-generationlost">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League: Generation Lost (2010-11)</span>
+                <span class="comic-desc">Booster Gold, Captain Atom, Fire, and Ice try to prove Max Lord is alive and evil. The world has forgotten him.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-tt-villains">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Titans: Villains for Hire (2010)</span>
+                <span class="comic-desc">Deathstroke forms a team of villains as mercenaries.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-tt-teentitans">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Teen Titans by J.T. Krul (2010-11)</span>
+                <span class="comic-desc">Damian Wayne joins. Tim Drake leaves.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cosmic / New Gods Track -->
+        <div class="track-card" id="cosmic">
+          <div class="track-header">
+            <h3 class="track-title">Cosmic / New Gods Track</h3>
+            <span class="track-icon">🌌</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-cosmic-aftermath">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Final Crisis Aftermath: Escape (2009)</span>
+                <span class="comic-desc">The remnants of the New Gods in a post-Final Crisis world.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-cosmic-brightestday">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Brightest Day (2010-11)</span>
+                <span class="comic-desc">Martian Manhunter, Hawkman, Hawkgirl, and others are resurrected. Aquaman returns.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Magic / Vertigo Track -->
+        <div class="track-card" id="magic">
+          <div class="track-header">
+            <h3 class="track-title">Magic / Vertigo Track</h3>
+            <span class="track-icon">🔮</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-magic-zatanna">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Zatanna by Paul Dini (2010-11)</span>
+                <span class="comic-desc">Zatanna's first major solo series. Stage magic meets real sorcery.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-magic-jld">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League Dark setup (2011)</span>
+                <span class="comic-desc">The magic characters begin clustering for the New 52 launch.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Archers / Street Track -->
+        <div class="track-card" id="archers">
+          <div class="track-header">
+            <h3 class="track-title">Archers / Street Track</h3>
+            <span class="track-icon">🏹</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-archers-greenarrow">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Arrow by J.T. Krul (2010-11)</span>
+                <span class="comic-desc">Ollie is resurrected post-Blackest Night. Star City is destroyed and rebuilt as a forest.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-archers-question">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Question by Denny O'Neil (2010)</span>
+                <span class="comic-desc">Renee Montoya's ongoing series.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Martial Arts Track -->
+        <div class="track-card" id="martial-arts">
+          <div class="track-header">
+            <h3 class="track-title">Martial Arts Track</h3>
+            <span class="track-icon">🥋</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-martial-batmaninc">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman Incorporated: The Island of Mister Mayhew (2010)</span>
+                <span class="comic-desc">Batman's international agents include martial artists from every tradition.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-martial-redhood">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Red Hood: The Lost Days (2010)</span>
+                <span class="comic-desc">Jason Todd's training across the globe with the All-Caste, a secret martial-arts cult.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Atlantis Track -->
+        <div class="track-card" id="atlantis">
+          <div class="track-header">
+            <h3 class="track-title">Atlantis Track</h3>
+            <span class="track-icon">🌊</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-atlantis-brightestday">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Brightest Day: Aquaman (2010)</span>
+                <span class="comic-desc">Arthur Curry is resurrected. Mera's secret origin is revealed - she is from a dimension of water sorcerers.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-atlantis-aquaman">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Aquaman: Brightest Day (2010-11)</span>
+                <span class="comic-desc">Arthur struggles with his return and Mera's secrets.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Villain Track -->
+        <div class="track-card villain-track" id="villain">
+          <div class="track-header">
+            <h3 class="track-title">Villain Track</h3>
+            <span class="track-icon">💀</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-villain-blackestnight">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Blackest Night (2009-10)</span>
+                <span class="comic-desc">Nekron and the Black Lanterns. Every dead villain returns to torment the living. A horror event.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-villain-blackestbat">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Blackest Night: Batman (2009)</span>
+                <span class="comic-desc">Dead Batman villains (including the Graysons) attack Dick and Damian.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-villain-blackestflash">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Blackest Night: The Flash (2009)</span>
+                <span class="comic-desc">Reverse-Flash returns as a Black Lantern. Bart Allen and other dead speedsters attack Barry.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-villain-secretsix">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Secret Six: Danse Macabre (2010)</span>
+                <span class="comic-desc">The team faces Black Lanterns of their own dead.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-villain-blackmirror">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: The Black Mirror (2011)</span>
+                <span class="comic-desc">James Gordon Jr. as a psychological villain. No costume, just pure human evil.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-villain-sirens">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Gotham City Sirens (2009-11)</span>
+                <span class="comic-desc">Harley Quinn's descent and partial redemption. Poison Ivy's eco-terrorism. Catwoman's moral code.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-villain-zoom">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Road to Flashpoint (2011)</span>
+                <span class="comic-desc">Professor Zoom (Eobard Thawne) reveals he killed Barry's mother and manipulated his entire life.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p4-villain-krona">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: War of the Green Lanterns (2011)</span>
+                <span class="comic-desc">Krona enslaves the Guardians. The ultimate cosmic villain returns.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Post-Event Status Quo -->
+      <section class="status-section">
+        <h2 class="section-title">POST-EVENT STATUS QUO</h2>
+        <ul class="status-list">
+          <li>The universe is rebooted into the New 52. Pandora merges DC, Wildstorm, and Vertigo.</li>
+          <li>Barry Allen is the Flash. Wally West does not exist in the New 52 (initially).</li>
+          <li>Bruce Wayne is Batman. Dick returns to Nightwing.</li>
+          <li>Superman's origin is rewritten. He is younger, no longer married to Lois.</li>
+          <li>The Green Lantern continuity largely survives the reboot (Geoff Johns' run continues uninterrupted).</li>
+          <li>Wonder Woman's origin is rewritten. She is now the daughter of Zeus.</li>
+          <li>Aquaman is alive but his history with Mera is altered.</li>
+        </ul>
+      </section>
+
+      <!-- Elseworlds Vault -->
+      <section class="elseworlds-section">
+        <h2 class="section-title">ELSEWORLDS VAULT: PHASE 4</h2>
+        <div class="elseworlds-grid">
+          <div class="elseworld-card">
+            <h4>Batman: Whatever Happened to the Caped Crusader? (2009)</h4>
+            <p>Neil Gaiman's elegy for Batman. Every version of his death.</p>
+          </div>
+          <div class="elseworld-card">
+            <h4>Superman: Secret Origin (2009-10)</h4>
+            <p>Geoff Johns' definitive modern origin.</p>
+          </div>
+          <div class="elseworld-card">
+            <h4>Wednesday Comics (2009)</h4>
+            <p>Anthology with standalone Batman, Superman, Wonder Woman strips.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+      <div class="phase-navigation">
+        <a href="phase3.html" class="nav-btn">&larr; Phase 3: The Crisis Loop</a>
+        <a href="phase5.html" class="nav-btn nav-btn-next">Phase 5: The New 52 &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Miclase Comic Multiverse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/phase.js"></script>
+</body>
+</html>

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Phase 6: Rebirth & Metal | Miclase Comic Multiverse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="../index.html" class="navbar-brand">Miclase Comic Multiverse</a>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../dc-hub.html" class="nav-link dc-link active">DC</a></li>
+        <li><a href="../marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="../roster-new.html" class="nav-link">Roster</a></li>
+        <li><a href="../essentials-new.html" class="nav-link">Essentials</a></li>
+        <li><a href="../elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="../instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">☀️</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Phase Header -->
+      <div class="phase-header dc-glow">
+        <a href="../dc-hub.html" class="back-link">&larr; Back to DC Phases</a>
+        <h1>Phase 6: Rebirth & Metal</h1>
+        <div class="phase-meta">
+          <span class="phase-years">Years: 2016 - 2018</span>
+          <span class="phase-event">Anchor Event: Dark Nights: Metal</span>
+        </div>
+        <p class="phase-description">Hope returns. Legacy is restored. But beneath reality, a dark multiverse waits - a nightmare realm where every fear becomes a Batman who wins.</p>
+      </div>
+
+      <!-- Progress Tracker -->
+      <div class="progress-section">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+        <span class="progress-text" id="progressText">0 / 0 completed</span>
+      </div>
+
+      <!-- Event Pause Section -->
+      <section class="event-section">
+        <h2 class="section-title event-title">EVENT PAUSE - READ FIRST</h2>
+        <div class="event-card">
+          <h3>Dark Nights: Metal (2017-18)</h3>
+          <div class="event-details">
+            <p><strong>What it is:</strong> Batman discovers the Dark Multiverse - a realm of nightmare realities where every worst-case scenario exists. The Dark Knights (evil Batmen from nightmare worlds) invade.</p>
+            <p><strong>Why it matters:</strong> Introduces the Dark Multiverse, Perpetua, and the Monitor/Anti-Monitor hierarchy. Shatters the Source Wall. Sets up the next 5 years of DC.</p>
+            <p><strong>Core reading:</strong> Dark Nights: Metal #1-6, Dark Nights: Batman - The Dawnbreaker, The Red Death, The Murder Machine, The Drowned, The Merciless, The Devastator, The Batman Who Laughs.</p>
+          </div>
+          <label class="comic-checkbox">
+            <input type="checkbox" data-comic="dc-p6-event-metal">
+            <span class="checkmark"></span>
+            <span>Mark as Read</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Concurrent Reading Tracks -->
+      <section class="tracks-section">
+        <h2 class="section-title">CONCURRENT READING TRACKS</h2>
+
+        <!-- Bat-Family Track -->
+        <div class="track-card" id="bat-family">
+          <div class="track-header">
+            <h3 class="track-title">Bat-Family Track</h3>
+            <span class="track-icon">🦇</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-bat-iamgotham">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: I Am Gotham / I Am Suicide / I Am Bane (Batman #1-20, 2016-17)</span>
+                <span class="comic-desc">Tom King's run begins. Gotham Girl, Bane's return, Suicide Squad infiltration.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-bat-warofjokers">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: The War of Jokes and Riddles (Batman #25-32, 2017)</span>
+                <span class="comic-desc">Flashback to an early Batman case. Joker and Riddler go to war over who gets to kill Batman.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-bat-engagement">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Rules of Engagement (Batman #33-37, 2017-18)</span>
+                <span class="comic-desc">Batman and Catwoman's engagement. The Bat-Family reacts.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-bat-wedding">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: The Wedding (Batman #50, 2018)</span>
+                <span class="comic-desc">Bruce and Selina's wedding day. Bane manipulates Selina into leaving him at the altar.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-bat-nightwing">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Nightwing: Better Than Batman (2016-17)</span>
+                <span class="comic-desc">Dick returns to Bludhaven. Raptor, a villain from Dick's circus past, appears.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-bat-batgirl">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batgirl: Beyond Burnside (2016-17)</span>
+                <span class="comic-desc">Barbara travels Asia, faces her own doppelganger.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-bat-batwoman">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batwoman by Marguerite Bennett (2017-18)</span>
+                <span class="comic-desc">Kate Kane faces her past and the Many Arms of Death.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-bat-redhood">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Red Hood: Outlaw (2016-18)</span>
+                <span class="comic-desc">Jason Todd's ongoing series. Bizarro and Artemis join.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-bat-signal">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman and the Signal (2018)</span>
+                <span class="comic-desc">Duke Thomas gets his own series. The Signal operates in daylight.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Flash Family Track -->
+        <div class="track-card" id="flash-family">
+          <div class="track-header">
+            <h3 class="track-title">Flash Family Track</h3>
+            <span class="track-icon">⚡</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-flash-lightningstrikes">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Lightning Strikes Twice (The Flash: Rebirth #1, then The Flash #1-8, 2016)</span>
+                <span class="comic-desc">Barry's Rebirth origin. Godspeed (August Heart) becomes a speedster villain.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-flash-speeddarkness">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Speed of Darkness (The Flash #9-13, 2017)</span>
+                <span class="comic-desc">Shade returns. Wally West is back fully.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-flash-runningscared">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Running Scared (The Flash #23-27, 2017)</span>
+                <span class="comic-desc">Reverse-Flash (Eobard Thawne) returns. Barry proposes to Iris.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-flash-negative">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Negative (The Flash #28-32, 2017-18)</span>
+                <span class="comic-desc">Negative Flash. Meena Dhawan's return.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-flash-titans">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Titans: The Return of Wally West (2016)</span>
+                <span class="comic-desc">Wally reintegrates into the world. The Titans reform.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Lantern Track -->
+        <div class="track-card" id="lantern">
+          <div class="track-header">
+            <h3 class="track-title">Lantern Track</h3>
+            <span class="track-icon">💚</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-gl-sinestroslaw">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Hal Jordan and the Green Lantern Corps: Sinestro's Law (2016-17)</span>
+                <span class="comic-desc">Sinestro conquers the universe with his fear army. Hal and the Corps fight back.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-gl-bottledlight">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Hal Jordan and the Green Lantern Corps: Bottled Light (2017)</span>
+                <span class="comic-desc">The Green Lantern Corps is trapped in a bottle by Brainiac.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-gl-greenlanterns">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lanterns: Rage Planet (2016-17)</span>
+                <span class="comic-desc">Jessica Cruz and Simon Baz as Earth's Green Lanterns.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-gl-phantom">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lanterns: Phantom Lantern (2017)</span>
+                <span class="comic-desc">Frank Laminski, a man who wants to be a Lantern, finds the Phantom Ring.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Superman Track -->
+        <div class="track-card" id="superman">
+          <div class="track-header">
+            <h3 class="track-title">Superman Track</h3>
+            <span class="track-icon">🔴</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-sm-sonofsuperman">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Son of Superman (Superman: Rebirth #1, Superman #1-6, 2016)</span>
+                <span class="comic-desc">The pre-Flashpoint Superman raises his son Jon in the New 52 world.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-sm-superson">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Trials of the Super Son (Superman #10-13, 2017)</span>
+                <span class="comic-desc">Superman and Batman's sons (Jon and Damian) team up.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-sm-multiplicity">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Multiplicity (Superman #14-17, 2017)</span>
+                <span class="comic-desc">Superman meets Superman from across the multiverse.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-sm-blackdawn">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Black Dawn (Superman #20-26, 2017)</span>
+                <span class="comic-desc">Jon's powers emerge. The Kent farm hides dark secrets.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-sm-supersons">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superboy and Robin: Super Sons (2017-18)</span>
+                <span class="comic-desc">Jon Kent and Damian Wayne as a team. Comedy and heart.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-sm-supergirl">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Supergirl: Rebirth / Escape from the Phantom Zone (2016-17)</span>
+                <span class="comic-desc">Kara faces Cyborg Superman and the Phantom Zone.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Wonder Woman Track -->
+        <div class="track-card" id="wonder-woman">
+          <div class="track-header">
+            <h3 class="track-title">Wonder Woman Track</h3>
+            <span class="track-icon">⭐</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-ww-lies">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: The Lies / Year One (Wonder Woman: Rebirth #1, Wonder Woman #1-14, 2016)</span>
+                <span class="comic-desc">Greg Rucka's return. The New 52 origin is a lie. The true origin is told in parallel.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-ww-truth">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: The Truth / Godwatch (Wonder Woman #15-24, 2017)</span>
+                <span class="comic-desc">Diana faces the truth about the gods. Cheetah's origin is redefined.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Titans / Justice League Track -->
+        <div class="track-card" id="titans-jl">
+          <div class="track-header">
+            <h3 class="track-title">Titans / Justice League Track</h3>
+            <span class="track-icon">🌊</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-jl-extinction">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League: The Extinction Machine (2016-17)</span>
+                <span class="comic-desc">The League reforms. The Kindred, a psychic entity, attacks.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-jl-vssuicide">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League vs. Suicide Squad (2016-17)</span>
+                <span class="comic-desc">The League clashes with Amanda Waller's team.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-jl-nojustice">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League: No Justice (2018)</span>
+                <span class="comic-desc">The Source Wall breaks. New cosmic teams form.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-tt-titans">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Titans: The Return of Wally West (2016)</span>
+                <span class="comic-desc">Wally West is back. The original Titans reunite.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-tt-teentitans">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Teen Titans by Benjamin Percy (2016-18)</span>
+                <span class="comic-desc">Damian Wayne leads the Teen Titans. A darker, more aggressive team.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cosmic / New Gods Track -->
+        <div class="track-card" id="cosmic">
+          <div class="track-header">
+            <h3 class="track-title">Cosmic / New Gods Track</h3>
+            <span class="track-icon">🌌</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-cosmic-metal">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Dark Nights: Metal (2017-18)</span>
+                <span class="comic-desc">The Dark Multiverse. The Dark Knights. Barbatos.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-cosmic-bwl">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Dark Nights: The Batman Who Laughs (2017)</span>
+                <span class="comic-desc">A Batman who killed the Joker and became him. The most dangerous being in the Dark Multiverse.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Magic / Vertigo Track -->
+        <div class="track-card" id="magic">
+          <div class="track-header">
+            <h3 class="track-title">Magic / Vertigo Track</h3>
+            <span class="track-icon">🔮</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-magic-jld">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Justice League Dark: The Last Age of Magic (2018)</span>
+                <span class="comic-desc">Wonder Woman leads a new JLD. Hecate, goddess of magic, threatens reality.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-magic-raven">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Raven (2016-17)</span>
+                <span class="comic-desc">Raven's solo series. Trigon returns.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-magic-trinity">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Trinity: Better Together (2016-18)</span>
+                <span class="comic-desc">Batman, Superman, Wonder Woman as a team. Magic and cosmic threats.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Archers / Street Track -->
+        <div class="track-card" id="archers">
+          <div class="track-header">
+            <h3 class="track-title">Archers / Street Track</h3>
+            <span class="track-icon">🏹</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-archers-deathlife">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Arrow: The Death and Life of Oliver Queen (2016)</span>
+                <span class="comic-desc">Ollie's Rebirth. Black Canary returns.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-archers-emerald">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Arrow: Emerald Outlaw (2016-17)</span>
+                <span class="comic-desc">Ollie is framed as a terrorist.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-archers-starcity">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Arrow: The Rise of Star City (2017-18)</span>
+                <span class="comic-desc">The Ninth Circle (corporate villains) destroys Seattle.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Atlantis Track -->
+        <div class="track-card" id="atlantis">
+          <div class="track-header">
+            <h3 class="track-title">Atlantis Track</h3>
+            <span class="track-icon">🌊</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-atlantis-drowning">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Aquaman: The Drowning (2016)</span>
+                <span class="comic-desc">Aquaman's Rebirth. Black Manta attacks Atlantis.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-atlantis-blackmanta">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Aquaman: Black Manta Rising (2017)</span>
+                <span class="comic-desc">Manta's war on Arthur continues.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-atlantis-underworld">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Aquaman: Underworld (2017-18)</span>
+                <span class="comic-desc">Atlantis falls into civil war. Corum Rath usurps the throne.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Villain Track -->
+        <div class="track-card villain-track" id="villain">
+          <div class="track-header">
+            <h3 class="track-title">Villain Track</h3>
+            <span class="track-icon">💀</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-villain-warofjokers">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: The War of Jokes and Riddles (2017)</span>
+                <span class="comic-desc">Joker vs. Riddler. A gang war that tears Gotham apart. Kite Man (hell yeah) is a casualty.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-villain-iambane">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: I Am Bane (2017)</span>
+                <span class="comic-desc">Bane returns to Gotham. He breaks Batman psychologically, not physically.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-villain-darkknights">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Dark Nights: Metal (2017-18) - The Dark Knights</span>
+                <span class="comic-desc">Batman + Justice League powers + nightmare logic: The Batman Who Laughs, The Red Death, The Dawnbreaker, The Drowned, The Murder Machine, The Merciless, The Devastator.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-villain-godspeed">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Lightning Strikes Twice (2016)</span>
+                <span class="comic-desc">Godspeed. August Heart, Barry's friend, becomes a speedster who kills criminals.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p6-villain-blackmanta">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Aquaman: Black Manta Rising (2017)</span>
+                <span class="comic-desc">Black Manta destroys everything Arthur loves.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Post-Event Status Quo -->
+      <section class="status-section">
+        <h2 class="section-title">POST-EVENT STATUS QUO</h2>
+        <ul class="status-list">
+          <li>The Source Wall is broken. The multiverse is exposed to the void beyond.</li>
+          <li>The Dark Multiverse exists. Nightmare realities can breach into the main universe.</li>
+          <li>The Batman Who Laughs is loose in the main DCU.</li>
+          <li>Barbatos is defeated but the damage to reality is done.</li>
+          <li>No Justice sets up new team structures.</li>
+        </ul>
+      </section>
+
+      <!-- Elseworlds Vault -->
+      <section class="elseworlds-section">
+        <h2 class="section-title">ELSEWORLDS VAULT: PHASE 6</h2>
+        <div class="elseworlds-grid">
+          <div class="elseworld-card">
+            <h4>Batman: White Knight (2017-18)</h4>
+            <p>Joker is cured and becomes a hero. Batman is the villain.</p>
+          </div>
+          <div class="elseworld-card">
+            <h4>Mister Miracle by Tom King (2017-18)</h4>
+            <p>Scott Free escapes death traps and depression. A masterpiece.</p>
+          </div>
+          <div class="elseworld-card">
+            <h4>Batman: Creature of the Night (2017-18)</h4>
+            <p>A young boy believes he is Batman in a realistic world.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+      <div class="phase-navigation">
+        <a href="phase5.html" class="nav-btn">&larr; Phase 5: The New 52</a>
+        <a href="../dc-hub.html" class="nav-btn nav-btn-next">Back to DC Hub &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Miclase Comic Multiverse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/phase.js"></script>
+</body>
+</html>

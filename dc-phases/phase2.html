@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Phase 2: The Rise of Villains | Miclase Comic Multiverse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="../index.html" class="navbar-brand">Miclase Comic Multiverse</a>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../dc-hub.html" class="nav-link dc-link active">DC</a></li>
+        <li><a href="../marvel.html" class="nav-link marvel-link">Marvel</a></li>
+        <li><a href="../roster-new.html" class="nav-link">Roster</a></li>
+        <li><a href="../essentials-new.html" class="nav-link">Essentials</a></li>
+        <li><a href="../elseworlds.html" class="nav-link">Elseworlds</a></li>
+        <li><a href="../instructions.html" class="nav-link">Instructions</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">☀️</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Phase Header -->
+      <div class="phase-header dc-glow">
+        <a href="../dc-hub.html" class="back-link">&larr; Back to DC Phases</a>
+        <h1>Phase 2: The Rise of Villains</h1>
+        <div class="phase-meta">
+          <span class="phase-years">Years: 1994 - 2004</span>
+          <span class="phase-event">Anchor Event: Identity Crisis</span>
+        </div>
+        <p class="phase-description">Villains stop being jokes. They start targeting families. Gotham falls apart. The heroes' personal lives become war zones.</p>
+      </div>
+
+      <!-- Progress Tracker -->
+      <div class="progress-section">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+        <span class="progress-text" id="progressText">0 / 0 completed</span>
+      </div>
+
+      <!-- Event Pause Section -->
+      <section class="event-section">
+        <h2 class="section-title event-title">EVENT PAUSE - READ FIRST</h2>
+        <div class="event-card">
+          <h3>Identity Crisis (2004)</h3>
+          <div class="event-details">
+            <p><strong>What it is:</strong> Sue Dibny is murdered. The heroes' loved ones are targeted. A dark secret from the Justice League's past is exposed.</p>
+            <p><strong>Why it matters:</strong> Shifts DC from "bright" to "personal horror." Villains become lethal threats to families, not just cities. Deathstroke fights the entire JLA.</p>
+            <p><strong>Core reading:</strong> Identity Crisis #1-7. Tie-ins are minimal; the core series is self-contained.</p>
+          </div>
+          <label class="comic-checkbox">
+            <input type="checkbox" data-comic="dc-p2-event-identitycrisis">
+            <span class="checkmark"></span>
+            <span>Mark as Read</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Concurrent Reading Tracks -->
+      <section class="tracks-section">
+        <h2 class="section-title">CONCURRENT READING TRACKS</h2>
+        <p class="tracks-instruction">Read all chosen tracks side-by-side within a phase. Do not finish one track before starting another.</p>
+
+        <!-- Bat-Family Track -->
+        <div class="track-card" id="bat-family">
+          <div class="track-header">
+            <h3 class="track-title">Bat-Family Track</h3>
+            <span class="track-icon">🦇</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-contagion">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Contagion / Legacy (1996)</span>
+                <span class="comic-desc">Ra's al Ghul unleashes a plague on Gotham. Introduces the "legacy" of the Demon.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-cataclysm">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Cataclysm (1998)</span>
+                <span class="comic-desc">Earthquake destroys Gotham.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-nomansland">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: No Man's Land (1999-2000)</span>
+                <span class="comic-desc">The government abandons Gotham. Gangs and villains carve up the city. Introduces Cassandra Cain (Batgirl).</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-officerdown">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Officer Down (2001)</span>
+                <span class="comic-desc">Commissioner Gordon is shot. Renee Montoya investigates.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-murderer">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Bruce Wayne: Murderer? / Fugitive (2002-03)</span>
+                <span class="comic-desc">Bruce is framed for murder. He abandons his civilian identity.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-hush">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Hush (Batman #608-619, 2002-03)</span>
+                <span class="comic-desc">A mystery villain manipulates Batman's entire rogues gallery. Riddler is the secret architect.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-wargames">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: War Games (2004)</span>
+                <span class="comic-desc">Stephanie Brown (Spoiler) tries to prove herself to Batman. She is tortured and presumed dead by Black Mask.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-birdsofprey">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Birds of Prey by Chuck Dixon (1996-2002)</span>
+                <span class="comic-desc">Oracle and Black Canary operate as a covert team.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-nightwing">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Nightwing by Chuck Dixon (1996-2002)</span>
+                <span class="comic-desc">Dick Grayson establishes himself in Bludhaven.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-batgirl">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batgirl (Cassandra Cain) (Batgirl #1-12, 2000-01)</span>
+                <span class="comic-desc">Her early solo run. Defines her as a martial-arts weapon learning to be human.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-bat-robin">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Robin by Jon Lewis (2001-04)</span>
+                <span class="comic-desc">Tim Drake balances high school and heroics.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Flash Family Track -->
+        <div class="track-card" id="flash-family">
+          <div class="track-header">
+            <h3 class="track-title">Flash Family Track</h3>
+            <span class="track-icon">⚡</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-flash-deadheat">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Dead Heat (The Flash #108-111, 1996)</span>
+                <span class="comic-desc">Savitar and the Speed Force cult.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-flash-humanrace">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: The Human Race (The Flash #136-141, 1998)</span>
+                <span class="comic-desc">Wally races cosmic beings for Earth's survival.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-flash-wonderland">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Wonderland (The Flash #164-169, 2000)</span>
+                <span class="comic-desc">Wally enters an altered Keystone City.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-flash-bloodwillrun">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Blood Will Run (The Flash #170-176, 2001)</span>
+                <span class="comic-desc">Cicada cult kills Flash's allies.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-flash-blitz">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Blitz (The Flash #197-200, 2003)</span>
+                <span class="comic-desc">Hunter Zolomon becomes Zoom. A villain born from Wally's failure to save him.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Lantern Track -->
+        <div class="track-card" id="lantern">
+          <div class="track-header">
+            <h3 class="track-title">Lantern Track</h3>
+            <span class="track-icon">💚</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-gl-kylerayner">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern (Kyle Rayner) by Ron Marz (1994-2001)</span>
+                <span class="comic-desc">Kyle as the last Green Lantern. Introduces his artist background and relationship with Jade.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-gl-circleoffire">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: Circle of Fire (2000)</span>
+                <span class="comic-desc">Kyle teams with future/alt Lanterns.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-gl-finalnight">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Lantern: The Final Night (1996)</span>
+                <span class="comic-desc">Hal Jordan (Parallax) dies saving Earth. The sun is extinguished.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Superman Track -->
+        <div class="track-card" id="superman">
+          <div class="track-header">
+            <h3 class="track-title">Superman Track</h3>
+            <span class="track-icon">🔴</span>
+          </div>
+          <p class="track-note">Supergirl Rule Still Active</p>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-sm-wedding">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: The Wedding Album (1996)</span>
+                <span class="comic-desc">Clark marries Lois.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-sm-kingdomcome">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Kingdom Come (1996)</span>
+                <span class="comic-desc">Elseworlds-adjacent but essential. Defines the Superman archetype for the next 20 years of DC.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-sm-worldsatwar">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Our Worlds at War (2001)</span>
+                <span class="comic-desc">Imperiex destroys worlds. Doomsday returns. A cosmic war.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-sm-endingbattle">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Ending Battle (2002)</span>
+                <span class="comic-desc">Lex Luthor orchestrates a 24-hour assault on Superman's life.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-sm-birthright">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Birthright (2003-04)</span>
+                <span class="comic-desc">Updated post-Crisis origin. Lex as Clark's childhood friend.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-sm-steel">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Steel (1994-98)</span>
+                <span class="comic-desc">John Henry Irons carries the Superman legacy.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Wonder Woman Track -->
+        <div class="track-card" id="wonder-woman">
+          <div class="track-header">
+            <h3 class="track-title">Wonder Woman Track</h3>
+            <span class="track-icon">⭐</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-ww-byrne">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman by John Byrne (1997-01)</span>
+                <span class="comic-desc">Donna Troy's origins are re-explored. Hippolyta takes a more active role.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-ww-hiketeia">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: The Hiketeia (2002)</span>
+                <span class="comic-desc">Wonder Woman vs. Batman over a fugitive. Defines Diana's moral absolutism.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-ww-downtoearth">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Wonder Woman: Down to Earth (2003-04)</span>
+                <span class="comic-desc">Greg Rucka's run begins. Political intrigue and Cheetah.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Titans / Justice League Track -->
+        <div class="track-card" id="titans-jl">
+          <div class="track-header">
+            <h3 class="track-title">Titans / Justice League Track</h3>
+            <span class="track-icon">🌊</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-jl-morrison">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">JLA by Grant Morrison (1997-2000)</span>
+                <span class="comic-desc">The "big seven" League. Cosmic scale.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-jl-towerofbabel">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">JLA: Tower of Babel (2000)</span>
+                <span class="comic-desc">Ra's al Ghul steals Batman's contingency plans to defeat the League.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-jl-worldwar3">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">JLA: World War III (2000)</span>
+                <span class="comic-desc">Mageddon, a cosmic war machine.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-tt-titans">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Titans (1999-2003)</span>
+                <span class="comic-desc">The original New Teen Titans as adults.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-tt-youngjustice">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Young Justice (1998-2003)</span>
+                <span class="comic-desc">Tim Drake, Superboy, Impulse (Bart Allen). Lighthearted but important for character dynamics.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-tt-graduationday">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Titans/Young Justice: Graduation Day (2003)</span>
+                <span class="comic-desc">Donna Troy dies. Leads into the 2003 Teen Titans relaunch.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cosmic / New Gods Track -->
+        <div class="track-card" id="cosmic">
+          <div class="track-header">
+            <h3 class="track-title">Cosmic / New Gods Track</h3>
+            <span class="track-icon">🌌</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-cosmic-orion">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Orion by Walt Simonson (2000-02)</span>
+                <span class="comic-desc">The New Gods through the lens of Orion's rage.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-cosmic-rockofages">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">JLA: Rock of Ages (1997)</span>
+                <span class="comic-desc">Darkseid wins in a future timeline. The League prevents it.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-cosmic-worldsatwar">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Our Worlds at War (2001)</span>
+                <span class="comic-desc">Imperiex War. Cosmic-scale destruction.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Magic / Vertigo Track -->
+        <div class="track-card" id="magic">
+          <div class="track-header">
+            <h3 class="track-title">Magic / Vertigo Track</h3>
+            <span class="track-icon">🔮</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-magic-spectre">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Spectre by John Ostrander (1992-98)</span>
+                <span class="comic-desc">Jim Corrigan and later Hal Jordan as the Spectre.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-magic-dayofjudgment">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Day of Judgment (1999)</span>
+                <span class="comic-desc">Heaven and Hell go to war. Hal Jordan becomes the Spectre.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-magic-hellblazer">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Hellblazer: The Family Man (Hellblazer #23-24)</span>
+                <span class="comic-desc">Constantine vs. a human serial killer.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-magic-booksofmagic">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Books of Magic by Neil Gaiman (1990-91)</span>
+                <span class="comic-desc">Timothy Hunter's origin. Defines magic in the DCU.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Archers / Street Track -->
+        <div class="track-card" id="archers">
+          <div class="track-header">
+            <h3 class="track-title">Archers / Street Track</h3>
+            <span class="track-icon">🏹</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-archers-quiver">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Green Arrow by Kevin Smith: Quiver / The Sounds of Violence (2001-02)</span>
+                <span class="comic-desc">Oliver Queen is resurrected.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-archers-question">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Question (Renee Montoya)</span>
+                <span class="comic-desc">Featured heavily in Gotham Central.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Martial Arts Track -->
+        <div class="track-card" id="martial-arts">
+          <div class="track-header">
+            <h3 class="track-title">Martial Arts Track</h3>
+            <span class="track-icon">🥋</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-martial-batgirlyearone">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batgirl: Year One (2003)</span>
+                <span class="comic-desc">Barbara Gordon's origin as Batgirl (set in past, but published here).</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-martial-birdsofprey">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Birds of Prey</span>
+                <span class="comic-desc">Lady Shiva appears as a recurring antagonist/ally.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-martial-richarddragon">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Richard Dragon (2004)</span>
+                <span class="comic-desc">Dixon's series re-establishes Richard Dragon, Bronze Tiger, and Lady Shiva in the modern era.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Atlantis Track -->
+        <div class="track-card" id="atlantis">
+          <div class="track-header">
+            <h3 class="track-title">Atlantis Track</h3>
+            <span class="track-icon">🌊</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-atlantis-peterdavid">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Aquaman by Peter David (1994-2001)</span>
+                <span class="comic-desc">The hook-hand era. Aquaman becomes a heavy metal barbarian-king.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-atlantis-tempest">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Tempest (1996-98)</span>
+                <span class="comic-desc">Garth's solo evolution.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Villain Track -->
+        <div class="track-card villain-track" id="villain">
+          <div class="track-header">
+            <h3 class="track-title">Villain Track</h3>
+            <span class="track-icon">💀</span>
+          </div>
+          <ul class="comic-list">
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-villain-underworldunleashed">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Underworld Unleashed (1995)</span>
+                <span class="comic-desc">Neron offers villains their hearts' desires in exchange for their souls. Upgrades many rogues.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-villain-finalnight">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Final Night (1996)</span>
+                <span class="comic-desc">The Sun-Eater. A cosmic villain that requires hero and villain cooperation.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-villain-devilsadvocate">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Joker: The Devil's Advocate (1996)</span>
+                <span class="comic-desc">Joker on death row. Rare legal thriller take.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-villain-legacy">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Legacy (1996)</span>
+                <span class="comic-desc">Ra's al Ghul's global plague. A master villain operating at scale.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-villain-jokerslastlaugh">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Joker's Last Laugh (2001)</span>
+                <span class="comic-desc">Joker is told he has a terminal tumor. He "Joker-izes" every supervillain in the DCU.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-villain-hush">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Batman: Hush (2002-03)</span>
+                <span class="comic-desc">Riddler proves he can out-think Batman by manipulating the entire rogues gallery.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-villain-endingbattle">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Superman: Ending Battle (2002)</span>
+                <span class="comic-desc">Lex Luthor's personal, petty war on Superman.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-villain-blitz">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">The Flash: Blitz (2003)</span>
+                <span class="comic-desc">Zoom (Hunter Zolomon) is born. A villain who thinks he's helping Wally by making him "better" through tragedy.</span>
+              </div>
+            </li>
+            <li class="comic-item">
+              <label class="comic-checkbox">
+                <input type="checkbox" data-comic="dc-p2-villain-deathstroke">
+                <span class="checkmark"></span>
+              </label>
+              <div class="comic-info">
+                <span class="comic-title">Deathstroke: The Hunted (1994)</span>
+                <span class="comic-desc">Deathstroke framed for murder. His solo series begins.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Post-Event Status Quo -->
+      <section class="status-section">
+        <h2 class="section-title">POST-EVENT STATUS QUO</h2>
+        <ul class="status-list">
+          <li>The Justice League's secret (mind-wiping villains) is out. Trust fractures.</li>
+          <li>Tim Drake's father is murdered. Tim's life is destroyed.</li>
+          <li>Deathstroke is established as a metahuman tactician who can defeat the League single-handedly.</li>
+          <li>The villain community is no longer playing by old rules. The coming phases will be bloodier.</li>
+        </ul>
+      </section>
+
+      <!-- Elseworlds Vault -->
+      <section class="elseworlds-section">
+        <h2 class="section-title">ELSEWORLDS VAULT: PHASE 2</h2>
+        <div class="elseworlds-grid">
+          <div class="elseworld-card">
+            <h4>Superman: Red Son</h4>
+            <p>Communist Superman. Defines the alternate-timeline template.</p>
+          </div>
+          <div class="elseworld-card">
+            <h4>Batman: The Doom That Came to Gotham</h4>
+            <p>Lovecraftian Batman.</p>
+          </div>
+          <div class="elseworld-card">
+            <h4>The Sandman: Endless Nights</h4>
+            <p>Gaiman's return to the Endless.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+      <div class="phase-navigation">
+        <a href="phase1.html" class="nav-btn">&larr; Phase 1: Post-Crisis Foundation</a>
+        <a href="phase3.html" class="nav-btn nav-btn-next">Phase 3: The Crisis Loop &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Miclase Comic Multiverse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/phase.js"></script>
+</body>
+</html>
